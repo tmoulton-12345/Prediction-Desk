@@ -24,6 +24,10 @@ CalmBinderPress > Website Landlord > this desk
 
 https://app.notion.com/p/3e755ddfbc9f81518c1cffa765fab588
 
+## Repo
+
+https://github.com/tmoulton-12345/Prediction-Desk
+
 ## This repo
 
 Paper schemas, ops notes, and read-only public-fetch stubs only. No live auto-submit trading code. No secrets.
