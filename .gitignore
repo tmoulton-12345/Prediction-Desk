@@ -1,0 +1,28 @@
+# Secrets and env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*secret*
+*credentials*
+keys/
+.secrets/
+
+# Python / node
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+dist/
+build/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local paper dumps with PII (keep schemas, not raw dumps unless scrubbed)
+/data/private/
