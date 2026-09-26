@@ -1,0 +1,2150 @@
+{
+  "file_stamp": "20260926-1525",
+  "stamped_pt": "2026-09-26 15:25 PDT",
+  "pull_finished_pt": "2026-09-26 15:30 PDT",
+  "arb": false,
+  "true_arb_count": 0,
+  "games_scanned": 15,
+  "pm_game_slugs": [
+    "nfl-ari-sf-2026-09-27",
+    "nfl-bal-dal-2026-09-27",
+    "nfl-car-cle-2026-09-27",
+    "nfl-cin-pit-2026-09-27",
+    "nfl-hou-ind-2026-09-27",
+    "nfl-kc-mia-2026-09-27",
+    "nfl-lac-buf-2026-09-27",
+    "nfl-lar-den-2026-09-27",
+    "nfl-lv-no-2026-09-27",
+    "nfl-min-tb-2026-09-27",
+    "nfl-ne-jax-2026-09-27",
+    "nfl-nyj-det-2026-09-27",
+    "nfl-phi-chi-2026-09-28",
+    "nfl-sea-was-2026-09-27",
+    "nfl-ten-nyg-2026-09-27"
+  ],
+  "same_line_pairs_priced": 722,
+  "same_line_pairs_no_executable_touch_or_thin_moneyline": 0,
+  "fees": {
+    "polymarket_us_taker_theta_seen": [
+      "0.0695"
+    ],
+    "polymarket_us_formula": "theta * contracts * p * (1 - p), exact per contract; order fee rounded half-even to the cent",
+    "polymarket_us_rebate": "none assumed",
+    "novig_fee_seen": [
+      "0.03|WHEN_LIVE|OPEN_PREGAME"
+    ],
+    "novig_formula": "c * p * (1 - p) per $1 contract when charging; WHEN_LIVE is 0 while status is not OPEN_INGAME",
+    "novig_qty_unit": "book qty is 1-cent contracts; dollar contracts = qty / 100",
+    "sides": "taker on both venues (lift the offer). Maker rebates are not credited."
+  },
+  "liquidity_rule": {
+    "spreads_totals": "priced at the touch; size is a caveat, not a gate",
+    "moneyline_min_dollar_contracts_at_touch": "100"
+  },
+  "true_arbs": [],
+  "price_locks_failed_gate": [],
+  "near_misses": [
+    {
+      "game": [
+        "DET",
+        "NYJ"
+      ],
+      "kind": "total",
+      "line": "47.5",
+      "pm_market": "tsc-nfl-nyj-det-2026-09-27-total-47pt5",
+      "pm_side": "Over 47.5",
+      "pm_ask": "0.5300",
+      "pm_fee_per_contract": "0.017312450000",
+      "pm_touch_qty": "7.0000",
+      "pm_price_source": "book",
+      "novig_market": "01a0aa74-3304-7230-a162-8b88d6f36a64",
+      "novig_side": "Under 47.5",
+      "novig_ask": "0.46",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "1.05",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.007312450000",
+      "over_1_by": "0.007312450000",
+      "edge_pct_of_payout": "-0.731245000000",
+      "touch_qty_dollar_contracts": "1.05",
+      "pm_bankers_fee_on_100": "1.73",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0073",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['DET', 'NYJ'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "total key 47.5 sides Over 47.5 vs Under 47.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "KC",
+        "MIA"
+      ],
+      "kind": "spread",
+      "line": "10.5",
+      "pm_market": "asc-nfl-kc-mia-2026-09-27-pos-10pt5",
+      "pm_side": "KC +10.5",
+      "pm_ask": "0.9650",
+      "pm_fee_per_contract": "0.002347362500",
+      "pm_touch_qty": "996.7900",
+      "pm_price_source": "book",
+      "novig_market": "01a0c2e6-dd92-7be3-9613-5c3d2de81a7a",
+      "novig_side": "MIA -10.5",
+      "novig_ask": "0.041",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "228",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.008347362500",
+      "over_1_by": "0.008347362500",
+      "edge_pct_of_payout": "-0.834736250000",
+      "touch_qty_dollar_contracts": "228",
+      "pm_bankers_fee_on_100": "0.23",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0083",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['KC', 'MIA'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 10.5 sides KC +10.5 vs MIA -10.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "LV",
+        "NO"
+      ],
+      "kind": "spread",
+      "line": "3.5",
+      "pm_market": "asc-nfl-lv-no-2026-09-27-neg-3pt5",
+      "pm_side": "NO +3.5",
+      "pm_ask": "0.7400",
+      "pm_fee_per_contract": "0.013371800000",
+      "pm_touch_qty": "17.0000",
+      "pm_price_source": "book",
+      "novig_market": "01a0aa74-3766-75a3-a1c8-0c821e9b425b",
+      "novig_side": "LV -3.5",
+      "novig_ask": "0.255",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "0.67",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.008371800000",
+      "over_1_by": "0.008371800000",
+      "edge_pct_of_payout": "-0.837180000000",
+      "touch_qty_dollar_contracts": "0.67",
+      "pm_bankers_fee_on_100": "1.34",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0084",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['LV', 'NO'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 3.5 sides NO +3.5 vs LV -3.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "CIN",
+        "PIT"
+      ],
+      "kind": "total",
+      "line": "64.5",
+      "pm_market": "tsc-nfl-cin-pit-2026-09-27-total-64pt5",
+      "pm_side": "Over 64.5",
+      "pm_ask": "0.0550",
+      "pm_fee_per_contract": "0.003612262500",
+      "pm_touch_qty": "91.0500",
+      "pm_price_source": "book",
+      "novig_market": "01a0c19d-3277-7853-b34d-7d4855952fda",
+      "novig_side": "Under 64.5",
+      "novig_ask": "0.95",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "249",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.008612262500",
+      "over_1_by": "0.008612262500",
+      "edge_pct_of_payout": "-0.861226250000",
+      "touch_qty_dollar_contracts": "91.0500",
+      "pm_bankers_fee_on_100": "0.36",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0086",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['CIN', 'PIT'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "total key 64.5 sides Over 64.5 vs Under 64.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "JAX",
+        "NE"
+      ],
+      "kind": "spread",
+      "line": "9.5",
+      "pm_market": "asc-nfl-ne-jax-2026-09-27-neg-9pt5",
+      "pm_side": "NE -9.5",
+      "pm_ask": "0.1500",
+      "pm_fee_per_contract": "0.008861250000",
+      "pm_touch_qty": "38.7100",
+      "pm_price_source": "book",
+      "novig_market": "01a0c1b8-a283-7482-a96f-fb4b60f90fec",
+      "novig_side": "JAX +9.5",
+      "novig_ask": "0.85",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "1333.33",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.008861250000",
+      "over_1_by": "0.008861250000",
+      "edge_pct_of_payout": "-0.886125000000",
+      "touch_qty_dollar_contracts": "38.7100",
+      "pm_bankers_fee_on_100": "0.89",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0089",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['JAX', 'NE'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 9.5 sides NE -9.5 vs JAX +9.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "DET",
+        "NYJ"
+      ],
+      "kind": "spread",
+      "line": "5.5",
+      "pm_market": "asc-nfl-nyj-det-2026-09-27-neg-5pt5",
+      "pm_side": "DET +5.5",
+      "pm_ask": "0.8500",
+      "pm_fee_per_contract": "0.008861250000",
+      "pm_touch_qty": "13.4700",
+      "pm_price_source": "book",
+      "novig_market": "01a0c1b8-a217-7173-bead-e855d2728037",
+      "novig_side": "NYJ -5.5",
+      "novig_ask": "0.15",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "20",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.008861250000",
+      "over_1_by": "0.008861250000",
+      "edge_pct_of_payout": "-0.886125000000",
+      "touch_qty_dollar_contracts": "13.4700",
+      "pm_bankers_fee_on_100": "0.89",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0089",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['DET', 'NYJ'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 5.5 sides DET +5.5 vs NYJ -5.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "JAX",
+        "NE"
+      ],
+      "kind": "total",
+      "line": "26.5",
+      "pm_market": "tsc-nfl-ne-jax-2026-09-27-total-26pt5",
+      "pm_side": "Over 26.5",
+      "pm_ask": "0.9350",
+      "pm_fee_per_contract": "0.004223862500",
+      "pm_touch_qty": "975.0000",
+      "pm_price_source": "book",
+      "novig_market": "01a0c19d-343b-7cb1-a568-ab7ce093cd09",
+      "novig_side": "Under 26.5",
+      "novig_ask": "0.07",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "95",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.009223862500",
+      "over_1_by": "0.009223862500",
+      "edge_pct_of_payout": "-0.922386250000",
+      "touch_qty_dollar_contracts": "95",
+      "pm_bankers_fee_on_100": "0.42",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0092",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['JAX', 'NE'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "total key 26.5 sides Over 26.5 vs Under 26.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "MIN",
+        "TB"
+      ],
+      "kind": "spread",
+      "line": "10.5",
+      "pm_market": "asc-nfl-min-tb-2026-09-27-pos-10pt5",
+      "pm_side": "TB -10.5",
+      "pm_ask": "0.1600",
+      "pm_fee_per_contract": "0.009340800000",
+      "pm_touch_qty": "44.2000",
+      "pm_price_source": "book",
+      "novig_market": "01a0c19d-358d-7970-b6a9-e9a561ede9e6",
+      "novig_side": "MIN +10.5",
+      "novig_ask": "0.84",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "1250",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.009340800000",
+      "over_1_by": "0.009340800000",
+      "edge_pct_of_payout": "-0.934080000000",
+      "touch_qty_dollar_contracts": "44.2000",
+      "pm_bankers_fee_on_100": "0.93",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0093",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['MIN', 'TB'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 10.5 sides TB -10.5 vs MIN +10.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "LV",
+        "NO"
+      ],
+      "kind": "spread",
+      "line": "14.5",
+      "pm_market": "asc-nfl-lv-no-2026-09-27-neg-14pt5",
+      "pm_side": "NO +14.5",
+      "pm_ask": "0.9250",
+      "pm_fee_per_contract": "0.004821562500",
+      "pm_touch_qty": "2500.0000",
+      "pm_price_source": "book",
+      "novig_market": "01a0cc05-7fd4-7b62-b536-3c39af7c4a30",
+      "novig_side": "LV -14.5",
+      "novig_ask": "0.08",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "205",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.009821562500",
+      "over_1_by": "0.009821562500",
+      "edge_pct_of_payout": "-0.982156250000",
+      "touch_qty_dollar_contracts": "205",
+      "pm_bankers_fee_on_100": "0.48",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0098",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['LV', 'NO'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 14.5 sides NO +14.5 vs LV -14.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "DET",
+        "NYJ"
+      ],
+      "kind": "spread",
+      "line": "9.5",
+      "pm_market": "asc-nfl-nyj-det-2026-09-27-neg-9pt5",
+      "pm_side": "DET +9.5",
+      "pm_ask": "0.9150",
+      "pm_fee_per_contract": "0.005405362500",
+      "pm_touch_qty": "2510.0000",
+      "pm_price_source": "book",
+      "novig_market": "01a0c5cc-6a10-7810-aefe-07fa11351c99",
+      "novig_side": "NYJ -9.5",
+      "novig_ask": "0.09",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "20",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.010405362500",
+      "over_1_by": "0.010405362500",
+      "edge_pct_of_payout": "-1.040536250000",
+      "touch_qty_dollar_contracts": "20",
+      "pm_bankers_fee_on_100": "0.54",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0104",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['DET', 'NYJ'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 9.5 sides DET +9.5 vs NYJ -9.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    }
+  ],
+  "line_shop": [
+    {
+      "game": "Kansas City Chiefs @ Miami Dolphins",
+      "kind": "total",
+      "pm_line": "45.5",
+      "pm_title": "Over 45.5 total points",
+      "pm_ref": "tsc-nfl-kc-mia-2026-09-27-total-45pt5",
+      "novig_line": "44.5",
+      "novig_title": "KC @ MIA t44.5",
+      "novig_ref": "01a0aa74-33f2-7a82-81eb-42ab009ce3d3",
+      "note": "Different lines. Not an arb."
+    },
+    {
+      "game": "Carolina Panthers @ Cleveland Browns",
+      "kind": "spread",
+      "pm_line": "2.5",
+      "pm_title": "Carolina Panthers wins by over 2.5 points",
+      "pm_ref": "asc-nfl-car-cle-2026-09-27-neg-2pt5",
+      "novig_line": "1.5",
+      "novig_title": "CLE +1.5",
+      "novig_ref": "01a0aa74-31f1-7da0-bbb9-5d3b068b627e",
+      "note": "Different lines. Not an arb."
+    },
+    {
+      "game": "Arizona Cardinals @ San Francisco 49ers",
+      "kind": "total",
+      "pm_line": "47.5",
+      "pm_title": "Over 47.5 total points",
+      "pm_ref": "tsc-nfl-ari-sf-2026-09-27-total-47pt5",
+      "novig_line": "48.5",
+      "novig_title": "ARI @ SF t48.5",
+      "novig_ref": "01a0aa74-364e-74e2-8175-4e7cebb0f4ee",
+      "note": "Different lines. Not an arb."
+    },
+    {
+      "game": "Los Angeles Rams @ Denver Broncos",
+      "kind": "spread",
+      "pm_line": "2.5",
+      "pm_title": "Los Angeles Rams wins by over 2.5 points",
+      "pm_ref": "asc-nfl-lar-den-2026-09-27-neg-2pt5",
+      "novig_line": "1.5",
+      "novig_title": "DEN +1.5",
+      "novig_ref": "01a0aa74-3835-7552-871a-65072e51fb9e",
+      "note": "Different lines. Not an arb."
+    },
+    {
+      "game": "Philadelphia Eagles @ Chicago Bears",
+      "kind": "total",
+      "pm_line": "42.5",
+      "pm_title": "Over 42.5 total points",
+      "pm_ref": "tsc-nfl-phi-chi-2026-09-28-total-42pt5",
+      "novig_line": "41.5",
+      "novig_title": "PHI @ CHI t41.5",
+      "novig_ref": "01a0aa74-3a33-7193-9ae1-10a66bf75fba",
+      "note": "Different lines. Not an arb."
+    }
+  ],
+  "games": [
+    {
+      "game": "Seattle Seahawks @ Washington Commanders",
+      "kickoff_pt": "2026-09-27 10:00 AM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "7.5",
+          "pm_main_ref": "asc-nfl-sea-was-2026-09-27-neg-7pt5",
+          "pm_main_title": "Seattle Seahawks wins by over 7.5 points",
+          "novig_main_line": "7.5",
+          "novig_main_ref": "01a0aa74-34b1-7b62-8c36-281e3493e41b",
+          "novig_main_title": "WSH +7.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "39.5",
+          "pm_main_ref": "tsc-nfl-sea-was-2026-09-27-total-39pt5",
+          "pm_main_title": "Over 39.5 total points",
+          "novig_main_line": "39.5",
+          "novig_main_ref": "01a0aa74-34b2-77c3-8ef6-a60b6fdc1be9",
+          "novig_main_title": "SEA @ WSH t39.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-sea-was-2026-09-27",
+          "pm_main_title": "SEA Seahawks vs WAS Commanders",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-34b0-7c22-83ab-e90e9ff136d9",
+          "novig_main_title": "WSH",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "SEA",
+          "WAS"
+        ],
+        "kind": "moneyline",
+        "line": null,
+        "pm_market": "aec-nfl-sea-was-2026-09-27",
+        "pm_side": "SEA",
+        "pm_ask": "0.7650",
+        "pm_fee_per_contract": "0.012494362500",
+        "pm_touch_qty": "918518.6200",
+        "pm_price_source": "book",
+        "novig_market": "01a0aa74-34b0-7c22-83ab-e90e9ff136d9",
+        "novig_side": "WAS",
+        "novig_ask": "0.235",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "555.03",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.012494362500",
+        "over_1_by": "0.012494362500",
+        "edge_pct_of_payout": "-1.249436250000",
+        "touch_qty_dollar_contracts": "555.03",
+        "pm_bankers_fee_on_100": "1.25",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0125",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['SEA', 'WAS'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "moneyline key winner sides SEA vs WAS."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Kansas City Chiefs @ Miami Dolphins",
+      "kickoff_pt": "2026-09-27 10:00 AM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "10.5",
+          "pm_main_ref": "asc-nfl-kc-mia-2026-09-27-neg-10pt5",
+          "pm_main_title": "Kansas City Chiefs wins by over 10.5 points",
+          "novig_main_line": "10.5",
+          "novig_main_ref": "01a0aa74-33f2-7a82-81eb-454982f6c749",
+          "novig_main_title": "MIA +10.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "45.5",
+          "pm_main_ref": "tsc-nfl-kc-mia-2026-09-27-total-45pt5",
+          "pm_main_title": "Over 45.5 total points",
+          "novig_main_line": "44.5",
+          "novig_main_ref": "01a0aa74-33f2-7a82-81eb-42ab009ce3d3",
+          "novig_main_title": "KC @ MIA t44.5",
+          "mains_same_line": false
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-kc-mia-2026-09-27",
+          "pm_main_title": "KC Chiefs vs MIA Dolphins",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-33f2-7a82-81eb-4274cdc232eb",
+          "novig_main_title": "MIA",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "KC",
+          "MIA"
+        ],
+        "kind": "spread",
+        "line": "10.5",
+        "pm_market": "asc-nfl-kc-mia-2026-09-27-pos-10pt5",
+        "pm_side": "KC +10.5",
+        "pm_ask": "0.9650",
+        "pm_fee_per_contract": "0.002347362500",
+        "pm_touch_qty": "996.7900",
+        "pm_price_source": "book",
+        "novig_market": "01a0c2e6-dd92-7be3-9613-5c3d2de81a7a",
+        "novig_side": "MIA -10.5",
+        "novig_ask": "0.041",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "228",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.008347362500",
+        "over_1_by": "0.008347362500",
+        "edge_pct_of_payout": "-0.834736250000",
+        "touch_qty_dollar_contracts": "228",
+        "pm_bankers_fee_on_100": "0.23",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0083",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['KC', 'MIA'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "spread key 10.5 sides KC +10.5 vs MIA -10.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "New England Patriots @ Jacksonville Jaguars",
+      "kickoff_pt": "2026-09-27 10:00 AM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "2.5",
+          "pm_main_ref": "asc-nfl-ne-jax-2026-09-27-pos-2pt5",
+          "pm_main_title": "Jacksonville Jaguars wins by over 2.5 points",
+          "novig_main_line": "2.5",
+          "novig_main_ref": "01a0aa74-3391-7b63-b3c2-26cae19f9fb3",
+          "novig_main_title": "JAX -2.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "46.5",
+          "pm_main_ref": "tsc-nfl-ne-jax-2026-09-27-total-46pt5",
+          "pm_main_title": "Over 46.5 total points",
+          "novig_main_line": "46.5",
+          "novig_main_ref": "01a0aa74-3390-7ee2-b45f-5063bb175e52",
+          "novig_main_title": "NE @ JAX t46.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-ne-jax-2026-09-27",
+          "pm_main_title": "NE Patriots vs JAC Jaguars",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-3390-7ee2-b45f-5038c360deb5",
+          "novig_main_title": "JAX",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "JAX",
+          "NE"
+        ],
+        "kind": "spread",
+        "line": "9.5",
+        "pm_market": "asc-nfl-ne-jax-2026-09-27-neg-9pt5",
+        "pm_side": "NE -9.5",
+        "pm_ask": "0.1500",
+        "pm_fee_per_contract": "0.008861250000",
+        "pm_touch_qty": "38.7100",
+        "pm_price_source": "book",
+        "novig_market": "01a0c1b8-a283-7482-a96f-fb4b60f90fec",
+        "novig_side": "JAX +9.5",
+        "novig_ask": "0.85",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "1333.33",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.008861250000",
+        "over_1_by": "0.008861250000",
+        "edge_pct_of_payout": "-0.886125000000",
+        "touch_qty_dollar_contracts": "38.7100",
+        "pm_bankers_fee_on_100": "0.89",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0089",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['JAX', 'NE'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "spread key 9.5 sides NE -9.5 vs JAX +9.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "New York Jets @ Detroit Lions",
+      "kickoff_pt": "2026-09-27 10:00 AM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "6.5",
+          "pm_main_ref": "asc-nfl-nyj-det-2026-09-27-pos-6pt5",
+          "pm_main_title": "Detroit Lions wins by over 6.5 points",
+          "novig_main_line": "6.5",
+          "novig_main_ref": "01a0aa74-3304-7230-a162-8dfa0e7587ee",
+          "novig_main_title": "DET -6.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "48.5",
+          "pm_main_ref": "tsc-nfl-nyj-det-2026-09-27-total-48pt5",
+          "pm_main_title": "Over 48.5 total points",
+          "novig_main_line": "48.5",
+          "novig_main_ref": "01a0aa74-3305-7f21-a319-d3b162202c87",
+          "novig_main_title": "NYJ @ DET t48.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-nyj-det-2026-09-27",
+          "pm_main_title": "NY Jets vs DET Lions",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-3304-7230-a162-8b5986d0f65f",
+          "novig_main_title": "DET",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "DET",
+          "NYJ"
+        ],
+        "kind": "total",
+        "line": "47.5",
+        "pm_market": "tsc-nfl-nyj-det-2026-09-27-total-47pt5",
+        "pm_side": "Over 47.5",
+        "pm_ask": "0.5300",
+        "pm_fee_per_contract": "0.017312450000",
+        "pm_touch_qty": "7.0000",
+        "pm_price_source": "book",
+        "novig_market": "01a0aa74-3304-7230-a162-8b88d6f36a64",
+        "novig_side": "Under 47.5",
+        "novig_ask": "0.46",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "1.05",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.007312450000",
+        "over_1_by": "0.007312450000",
+        "edge_pct_of_payout": "-0.731245000000",
+        "touch_qty_dollar_contracts": "1.05",
+        "pm_bankers_fee_on_100": "1.73",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0073",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['DET', 'NYJ'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "total key 47.5 sides Over 47.5 vs Under 47.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Los Angeles Chargers @ Buffalo Bills",
+      "kickoff_pt": "2026-09-27 10:00 AM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "7.5",
+          "pm_main_ref": "asc-nfl-lac-buf-2026-09-27-pos-7pt5",
+          "pm_main_title": "Buffalo Bills wins by over 7.5 points",
+          "novig_main_line": "7.5",
+          "novig_main_ref": "01a0aa74-329f-7da0-8534-88529e0dd7c8",
+          "novig_main_title": "BUF -7.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "49.5",
+          "pm_main_ref": "tsc-nfl-lac-buf-2026-09-27-total-49pt5",
+          "pm_main_title": "Over 49.5 total points",
+          "novig_main_line": "49.5",
+          "novig_main_ref": "01a0aa74-329f-7da0-8534-8b5f78a92967",
+          "novig_main_title": "LAC @ BUF t49.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-lac-buf-2026-09-27",
+          "pm_main_title": "LA Chargers vs BUF Bills",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-329e-7e80-9e7c-a252633e9cf2",
+          "novig_main_title": "BUF",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "BUF",
+          "LAC"
+        ],
+        "kind": "total",
+        "line": "32.5",
+        "pm_market": "tsc-nfl-lac-buf-2026-09-27-total-32pt5",
+        "pm_side": "Over 32.5",
+        "pm_ask": "0.9150",
+        "pm_fee_per_contract": "0.005405362500",
+        "pm_touch_qty": "4134.0200",
+        "pm_price_source": "book",
+        "novig_market": "01a0c19d-337e-7b31-a74b-9a935031ec44",
+        "novig_side": "Under 32.5",
+        "novig_ask": "0.095",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "1394",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.015405362500",
+        "over_1_by": "0.015405362500",
+        "edge_pct_of_payout": "-1.540536250000",
+        "touch_qty_dollar_contracts": "1394",
+        "pm_bankers_fee_on_100": "0.54",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0154",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['BUF', 'LAC'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "total key 32.5 sides Over 32.5 vs Under 32.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Carolina Panthers @ Cleveland Browns",
+      "kickoff_pt": "2026-09-27 10:00 AM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "2.5",
+          "pm_main_ref": "asc-nfl-car-cle-2026-09-27-neg-2pt5",
+          "pm_main_title": "Carolina Panthers wins by over 2.5 points",
+          "novig_main_line": "1.5",
+          "novig_main_ref": "01a0aa74-31f1-7da0-bbb9-5d3b068b627e",
+          "novig_main_title": "CLE +1.5",
+          "mains_same_line": false
+        },
+        "total": {
+          "pm_main_line": "42.5",
+          "pm_main_ref": "tsc-nfl-car-cle-2026-09-27-total-42pt5",
+          "pm_main_title": "Over 42.5 total points",
+          "novig_main_line": "42.5",
+          "novig_main_ref": "01a0aa74-31f2-73b3-b5fe-d297b31fb6eb",
+          "novig_main_title": "CAR @ CLE t42.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-car-cle-2026-09-27",
+          "pm_main_title": "CAR Panthers vs CLE Browns",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-31f1-7da0-bbb9-5b8da4c48122",
+          "novig_main_title": "CLE",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "CAR",
+          "CLE"
+        ],
+        "kind": "spread",
+        "line": "9.5",
+        "pm_market": "asc-nfl-car-cle-2026-09-27-neg-9pt5",
+        "pm_side": "CLE +9.5",
+        "pm_ask": "0.7500",
+        "pm_fee_per_contract": "0.013031250000",
+        "pm_touch_qty": "11.0000",
+        "pm_price_source": "book",
+        "novig_market": "01a0aa74-31f1-7da0-bbb9-5e85d78a65db",
+        "novig_side": "CAR -9.5",
+        "novig_ask": "0.25",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "250",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.013031250000",
+        "over_1_by": "0.013031250000",
+        "edge_pct_of_payout": "-1.303125000000",
+        "touch_qty_dollar_contracts": "11.0000",
+        "pm_bankers_fee_on_100": "1.30",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0130",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['CAR', 'CLE'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "spread key 9.5 sides CLE +9.5 vs CAR -9.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Houston Texans @ Indianapolis Colts",
+      "kickoff_pt": "2026-09-27 10:00 AM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "1.5",
+          "pm_main_ref": "asc-nfl-hou-ind-2026-09-27-neg-1pt5",
+          "pm_main_title": "Houston Texans wins by over 1.5 points",
+          "novig_main_line": "1.5",
+          "novig_main_ref": "01a0aa74-313d-7f11-8843-c6fcad6d3614",
+          "novig_main_title": "IND +1.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "42.5",
+          "pm_main_ref": "tsc-nfl-hou-ind-2026-09-27-total-42pt5",
+          "pm_main_title": "Over 42.5 total points",
+          "novig_main_line": "42.5",
+          "novig_main_ref": "01a0aa74-313e-79b1-8330-c8799d5d787b",
+          "novig_main_title": "HOU @ IND t42.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-hou-ind-2026-09-27",
+          "pm_main_title": "HOU Texans vs IND Colts",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-313d-7f11-8843-c4b8fa859d09",
+          "novig_main_title": "IND",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "HOU",
+          "IND"
+        ],
+        "kind": "spread",
+        "line": "7.5",
+        "pm_market": "asc-nfl-hou-ind-2026-09-27-neg-7pt5",
+        "pm_side": "HOU -7.5",
+        "pm_ask": "0.2750",
+        "pm_fee_per_contract": "0.013856562500",
+        "pm_touch_qty": "54.2000",
+        "pm_price_source": "book",
+        "novig_market": "01a0aa74-313d-7f11-8843-c7eaa50c0458",
+        "novig_side": "IND +7.5",
+        "novig_ask": "0.725",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "2244.52",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.013856562500",
+        "over_1_by": "0.013856562500",
+        "edge_pct_of_payout": "-1.385656250000",
+        "touch_qty_dollar_contracts": "54.2000",
+        "pm_bankers_fee_on_100": "1.39",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0139",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['HOU', 'IND'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "spread key 7.5 sides HOU -7.5 vs IND +7.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Cincinnati Bengals @ Pittsburgh Steelers",
+      "kickoff_pt": "2026-09-27 10:00 AM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "3.5",
+          "pm_main_ref": "asc-nfl-cin-pit-2026-09-27-neg-3pt5",
+          "pm_main_title": "Cincinnati Bengals wins by over 3.5 points",
+          "novig_main_line": "3.5",
+          "novig_main_ref": "01a0aa74-306b-7b90-9749-73906660dcb1",
+          "novig_main_title": "PIT +3.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "42.5",
+          "pm_main_ref": "tsc-nfl-cin-pit-2026-09-27-total-42pt5",
+          "pm_main_title": "Over 42.5 total points",
+          "novig_main_line": "42.5",
+          "novig_main_ref": "01a0aa74-306b-7b90-9749-75ad03555e8c",
+          "novig_main_title": "CIN @ PIT t42.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-cin-pit-2026-09-27",
+          "pm_main_title": "CIN Bengals vs PIT Steelers",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-306a-77b2-9d26-6603a30eafb4",
+          "novig_main_title": "PIT",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "CIN",
+          "PIT"
+        ],
+        "kind": "total",
+        "line": "64.5",
+        "pm_market": "tsc-nfl-cin-pit-2026-09-27-total-64pt5",
+        "pm_side": "Over 64.5",
+        "pm_ask": "0.0550",
+        "pm_fee_per_contract": "0.003612262500",
+        "pm_touch_qty": "91.0500",
+        "pm_price_source": "book",
+        "novig_market": "01a0c19d-3277-7853-b34d-7d4855952fda",
+        "novig_side": "Under 64.5",
+        "novig_ask": "0.95",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "249",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.008612262500",
+        "over_1_by": "0.008612262500",
+        "edge_pct_of_payout": "-0.861226250000",
+        "touch_qty_dollar_contracts": "91.0500",
+        "pm_bankers_fee_on_100": "0.36",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0086",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['CIN', 'PIT'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "total key 64.5 sides Over 64.5 vs Under 64.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Tennessee Titans @ New York Giants",
+      "kickoff_pt": "2026-09-27 10:00 AM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "2.5",
+          "pm_main_ref": "asc-nfl-ten-nyg-2026-09-27-pos-2pt5",
+          "pm_main_title": "New York Giants wins by over 2.5 points",
+          "novig_main_line": "2.5",
+          "novig_main_ref": "01a0aa74-2f51-7bd1-ba3a-e3280335ccc6",
+          "novig_main_title": "NYG -2.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "37.5",
+          "pm_main_ref": "tsc-nfl-ten-nyg-2026-09-27-total-37pt5",
+          "pm_main_title": "Over 37.5 total points",
+          "novig_main_line": "37.5",
+          "novig_main_ref": "01a0aa74-2f50-7642-a212-48c7e3be2121",
+          "novig_main_title": "TEN @ NYG t37.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-ten-nyg-2026-09-27",
+          "pm_main_title": "TEN Titans vs NY Giants",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-2f50-7642-a212-47490abd6b31",
+          "novig_main_title": "NYG",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "NYG",
+          "TEN"
+        ],
+        "kind": "total",
+        "line": "35.5",
+        "pm_market": "tsc-nfl-ten-nyg-2026-09-27-total-35pt5",
+        "pm_side": "Under 35.5",
+        "pm_ask": "0.4150",
+        "pm_fee_per_contract": "0.016872862500",
+        "pm_touch_qty": "15.0200",
+        "pm_price_source": "book",
+        "novig_market": "01a0aa74-2f50-7642-a212-486f49d2a335",
+        "novig_side": "Over 35.5",
+        "novig_ask": "0.58",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "59.38",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.011872862500",
+        "over_1_by": "0.011872862500",
+        "edge_pct_of_payout": "-1.187286250000",
+        "touch_qty_dollar_contracts": "15.0200",
+        "pm_bankers_fee_on_100": "1.69",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0119",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['NYG', 'TEN'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "total key 35.5 sides Under 35.5 vs Over 35.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Arizona Cardinals @ San Francisco 49ers",
+      "kickoff_pt": "2026-09-27 1:05 PM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "7.5",
+          "pm_main_ref": "asc-nfl-ari-sf-2026-09-27-pos-7pt5",
+          "pm_main_title": "San Francisco 49ers wins by over 7.5 points",
+          "novig_main_line": "7.5",
+          "novig_main_ref": "01a0aa74-364f-7760-b4ea-6b052bc67108",
+          "novig_main_title": "SF -7.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "47.5",
+          "pm_main_ref": "tsc-nfl-ari-sf-2026-09-27-total-47pt5",
+          "pm_main_title": "Over 47.5 total points",
+          "novig_main_line": "48.5",
+          "novig_main_ref": "01a0aa74-364e-74e2-8175-4e7cebb0f4ee",
+          "novig_main_title": "ARI @ SF t48.5",
+          "mains_same_line": false
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-ari-sf-2026-09-27",
+          "pm_main_title": "ARI Cardinals vs SF 49ers",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-364e-74e2-8175-4ea0b13a506c",
+          "novig_main_title": "SF",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "ARI",
+          "SF"
+        ],
+        "kind": "moneyline",
+        "line": null,
+        "pm_market": "aec-nfl-ari-sf-2026-09-27",
+        "pm_side": "SF",
+        "pm_ask": "0.7800",
+        "pm_fee_per_contract": "0.011926200000",
+        "pm_touch_qty": "757297.6800",
+        "pm_price_source": "book",
+        "novig_market": "01a0aa74-364e-74e2-8175-4ea0b13a506c",
+        "novig_side": "ARI",
+        "novig_ask": "0.22",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "4019.8",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.011926200000",
+        "over_1_by": "0.011926200000",
+        "edge_pct_of_payout": "-1.192620000000",
+        "touch_qty_dollar_contracts": "4019.8",
+        "pm_bankers_fee_on_100": "1.19",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0119",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['ARI', 'SF'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "moneyline key winner sides SF vs ARI."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
+      "kickoff_pt": "2026-09-27 1:05 PM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "1.5",
+          "pm_main_ref": "asc-nfl-min-tb-2026-09-27-neg-1pt5",
+          "pm_main_title": "Minnesota Vikings wins by over 1.5 points",
+          "novig_main_line": "1.5",
+          "novig_main_ref": "01a0aa74-3516-7c72-a756-235f18c2d01e",
+          "novig_main_title": "TB +1.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "42.5",
+          "pm_main_ref": "tsc-nfl-min-tb-2026-09-27-total-42pt5",
+          "pm_main_title": "Over 42.5 total points",
+          "novig_main_line": "42.5",
+          "novig_main_ref": "01a0aa74-3516-7c72-a756-1fcd9ce7b4d3",
+          "novig_main_title": "MIN @ TB t42.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-min-tb-2026-09-27",
+          "pm_main_title": "MIN Vikings vs TB Buccaneers",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-3515-7cf1-b4c5-e917af005c00",
+          "novig_main_title": "TB",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "MIN",
+          "TB"
+        ],
+        "kind": "spread",
+        "line": "10.5",
+        "pm_market": "asc-nfl-min-tb-2026-09-27-pos-10pt5",
+        "pm_side": "TB -10.5",
+        "pm_ask": "0.1600",
+        "pm_fee_per_contract": "0.009340800000",
+        "pm_touch_qty": "44.2000",
+        "pm_price_source": "book",
+        "novig_market": "01a0c19d-358d-7970-b6a9-e9a561ede9e6",
+        "novig_side": "MIN +10.5",
+        "novig_ask": "0.84",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "1250",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.009340800000",
+        "over_1_by": "0.009340800000",
+        "edge_pct_of_payout": "-0.934080000000",
+        "touch_qty_dollar_contracts": "44.2000",
+        "pm_bankers_fee_on_100": "0.93",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0093",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['MIN', 'TB'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "spread key 10.5 sides TB -10.5 vs MIN +10.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Las Vegas Raiders @ New Orleans Saints",
+      "kickoff_pt": "2026-09-27 1:25 PM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "3.5",
+          "pm_main_ref": "asc-nfl-lv-no-2026-09-27-pos-3pt5",
+          "pm_main_title": "New Orleans Saints wins by over 3.5 points",
+          "novig_main_line": "3.5",
+          "novig_main_ref": "01a0aa74-3764-7d43-943f-2600c9810344",
+          "novig_main_title": "NO -3.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "43.5",
+          "pm_main_ref": "tsc-nfl-lv-no-2026-09-27-total-43pt5",
+          "pm_main_title": "Over 43.5 total points",
+          "novig_main_line": "43.5",
+          "novig_main_ref": "01a0aa74-3764-7d43-943f-284b2b15c42f",
+          "novig_main_title": "LV @ NO t43.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-lv-no-2026-09-27",
+          "pm_main_title": "LV Raiders vs NO Saints",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-3764-7d43-943f-2690ea7fdec1",
+          "novig_main_title": "NO",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "LV",
+          "NO"
+        ],
+        "kind": "spread",
+        "line": "3.5",
+        "pm_market": "asc-nfl-lv-no-2026-09-27-neg-3pt5",
+        "pm_side": "NO +3.5",
+        "pm_ask": "0.7400",
+        "pm_fee_per_contract": "0.013371800000",
+        "pm_touch_qty": "17.0000",
+        "pm_price_source": "book",
+        "novig_market": "01a0aa74-3766-75a3-a1c8-0c821e9b425b",
+        "novig_side": "LV -3.5",
+        "novig_ask": "0.255",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "0.67",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.008371800000",
+        "over_1_by": "0.008371800000",
+        "edge_pct_of_payout": "-0.837180000000",
+        "touch_qty_dollar_contracts": "0.67",
+        "pm_bankers_fee_on_100": "1.34",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0084",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['LV', 'NO'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "spread key 3.5 sides NO +3.5 vs LV -3.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Baltimore Ravens @ Dallas Cowboys",
+      "kickoff_pt": "2026-09-27 1:25 PM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "3.5",
+          "pm_main_ref": "asc-nfl-bal-dal-2026-09-27-neg-3pt5",
+          "pm_main_title": "Baltimore Ravens wins by over 3.5 points",
+          "novig_main_line": "3.5",
+          "novig_main_ref": "01a0aa74-36db-7163-8ff2-0fcbdcd65188",
+          "novig_main_title": "DAL +3.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "53.5",
+          "pm_main_ref": "tsc-nfl-bal-dal-2026-09-27-total-53pt5",
+          "pm_main_title": "Over 53.5 total points",
+          "novig_main_line": "53.5",
+          "novig_main_ref": "01a0aa74-36dc-75d3-8cc1-2df504ef7922",
+          "novig_main_title": "BAL @ DAL t53.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-bal-dal-2026-09-27",
+          "pm_main_title": "BAL Ravens vs DAL Cowboys",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-36db-7163-8ff2-1027a5c4f54f",
+          "novig_main_title": "DAL",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "BAL",
+          "DAL"
+        ],
+        "kind": "spread",
+        "line": "10.5",
+        "pm_market": "asc-nfl-bal-dal-2026-09-27-pos-10pt5",
+        "pm_side": "BAL +10.5",
+        "pm_ask": "0.8850",
+        "pm_fee_per_contract": "0.007073362500",
+        "pm_touch_qty": "1.0000",
+        "pm_price_source": "book",
+        "novig_market": "01a0c19d-365a-71c2-a004-5112246d7909",
+        "novig_side": "DAL -10.5",
+        "novig_ask": "0.12",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "250",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.012073362500",
+        "over_1_by": "0.012073362500",
+        "edge_pct_of_payout": "-1.207336250000",
+        "touch_qty_dollar_contracts": "1.0000",
+        "pm_bankers_fee_on_100": "0.71",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0121",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['BAL', 'DAL'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "spread key 10.5 sides BAL +10.5 vs DAL -10.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Los Angeles Rams @ Denver Broncos",
+      "kickoff_pt": "2026-09-27 5:20 PM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "2.5",
+          "pm_main_ref": "asc-nfl-lar-den-2026-09-27-neg-2pt5",
+          "pm_main_title": "Los Angeles Rams wins by over 2.5 points",
+          "novig_main_line": "1.5",
+          "novig_main_ref": "01a0aa74-3835-7552-871a-65072e51fb9e",
+          "novig_main_title": "DEN +1.5",
+          "mains_same_line": false
+        },
+        "total": {
+          "pm_main_line": "44.5",
+          "pm_main_ref": "tsc-nfl-lar-den-2026-09-27-total-44pt5",
+          "pm_main_title": "Over 44.5 total points",
+          "novig_main_line": "44.5",
+          "novig_main_ref": "01a0aa74-3836-7e20-a991-4ba9b7d71bb5",
+          "novig_main_title": "LAR @ DEN t44.5",
+          "mains_same_line": true
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-lar-den-2026-09-27",
+          "pm_main_title": "LA Rams vs DEN Broncos",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-3835-7552-871a-62fc8ad2999c",
+          "novig_main_title": "DEN",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "DEN",
+          "LAR"
+        ],
+        "kind": "total",
+        "line": "54.5",
+        "pm_market": "tsc-nfl-lar-den-2026-09-27-total-54pt5",
+        "pm_side": "Under 54.5",
+        "pm_ask": "0.7650",
+        "pm_fee_per_contract": "0.012494362500",
+        "pm_touch_qty": "3.0200",
+        "pm_price_source": "book",
+        "novig_market": "01a0aa74-3836-7e20-a991-4d5c9734a20d",
+        "novig_side": "Over 54.5",
+        "novig_ask": "0.235",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "250",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.012494362500",
+        "over_1_by": "0.012494362500",
+        "edge_pct_of_payout": "-1.249436250000",
+        "touch_qty_dollar_contracts": "3.0200",
+        "pm_bankers_fee_on_100": "1.25",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0125",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['DEN', 'LAR'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "total key 54.5 sides Under 54.5 vs Over 54.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    },
+    {
+      "game": "Philadelphia Eagles @ Chicago Bears",
+      "kickoff_pt": "2026-09-28 5:15 PM PT",
+      "event_status": "OPEN_PREGAME",
+      "markets": {
+        "spread": {
+          "pm_main_line": "3.5",
+          "pm_main_ref": "asc-nfl-phi-chi-2026-09-28-neg-3pt5",
+          "pm_main_title": "Philadelphia Eagles wins by over 3.5 points",
+          "novig_main_line": "3.5",
+          "novig_main_ref": "01a0aa74-3a32-75b2-bd49-e1d184453dd5",
+          "novig_main_title": "CHI +3.5",
+          "mains_same_line": true
+        },
+        "total": {
+          "pm_main_line": "42.5",
+          "pm_main_ref": "tsc-nfl-phi-chi-2026-09-28-total-42pt5",
+          "pm_main_title": "Over 42.5 total points",
+          "novig_main_line": "41.5",
+          "novig_main_ref": "01a0aa74-3a33-7193-9ae1-10a66bf75fba",
+          "novig_main_title": "PHI @ CHI t41.5",
+          "mains_same_line": false
+        },
+        "moneyline": {
+          "pm_main_line": null,
+          "pm_main_ref": "aec-nfl-phi-chi-2026-09-28",
+          "pm_main_title": "PHI Eagles vs CHI Bears",
+          "novig_main_line": null,
+          "novig_main_ref": "01a0aa74-3a32-75b2-bd49-deda4d75ed0c",
+          "novig_main_title": "CHI",
+          "mains_same_line": true
+        }
+      },
+      "closest_same_line": {
+        "game": [
+          "CHI",
+          "PHI"
+        ],
+        "kind": "spread",
+        "line": "3.5",
+        "pm_market": "asc-nfl-phi-chi-2026-09-28-pos-3pt5",
+        "pm_side": "PHI +3.5",
+        "pm_ask": "0.7500",
+        "pm_fee_per_contract": "0.013031250000",
+        "pm_touch_qty": "17.0000",
+        "pm_price_source": "book",
+        "novig_market": "01a0aa74-3a32-75b2-bd49-e11a9419179c",
+        "novig_side": "CHI -3.5",
+        "novig_ask": "0.25",
+        "novig_fee_per_contract": "0",
+        "novig_touch_qty_dollar_contracts": "50",
+        "novig_price_source": "book",
+        "round_trip_cost": "1.013031250000",
+        "over_1_by": "0.013031250000",
+        "edge_pct_of_payout": "-1.303125000000",
+        "touch_qty_dollar_contracts": "17.0000",
+        "pm_bankers_fee_on_100": "1.30",
+        "round_trip_per_contract_after_pm_cent_round_on_100": "1.0130",
+        "book_flags": [],
+        "gates": {
+          "same_event": {
+            "pass": true,
+            "detail": "Teams ['CHI', 'PHI'] on both venues."
+          },
+          "same_line": {
+            "pass": true,
+            "detail": "spread key 3.5 sides PHI +3.5 vs CHI -3.5."
+          },
+          "ot_void": {
+            "pass": false,
+            "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+          },
+          "settlement_source": {
+            "pass": true,
+            "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+          }
+        },
+        "true_arb": false
+      }
+    }
+  ],
+  "sources": {
+    "polymarket_us_events": "https://gateway.polymarket.us/v2/leagues/nfl/events",
+    "polymarket_us_book": "https://gateway.polymarket.us/v1/markets/{slug}/book",
+    "polymarket_us_fees": "https://docs.polymarket.us/fees",
+    "polymarket_us_sports_faq": "https://docs.polymarket.us/faqs/sports-faqs",
+    "novig_events": "https://api.novig.us/v3/public/catalog/events",
+    "novig_markets": "https://api.novig.us/v3/public/catalog/markets",
+    "novig_book": "https://api.novig.us/v3/public/catalog/markets/{id}/book",
+    "novig_fees": "https://docs.novig.com/api/concepts/fees",
+    "novig_nfl_spread_anchor": "https://ludlow-filings.s3.us-east-1.amazonaws.com/NFL-spread-anchor-cl-a.pdf",
+    "novig_nfl_total_anchor": "https://ludlow-filings.s3.us-east-1.amazonaws.com/NFL-total-anchor-cl-a.pdf",
+    "novig_nfl_winner_anchor": "https://ludlow-filings.s3.us-east-1.amazonaws.com/nfl-winner-anchor-cl-a.pdf"
+  },
+  "near_misses_min_touch_100": [
+    {
+      "game": [
+        "KC",
+        "MIA"
+      ],
+      "kind": "spread",
+      "line": "10.5",
+      "pm_market": "asc-nfl-kc-mia-2026-09-27-pos-10pt5",
+      "pm_side": "KC +10.5",
+      "pm_ask": "0.9650",
+      "pm_fee_per_contract": "0.002347362500",
+      "pm_touch_qty": "996.7900",
+      "pm_price_source": "book",
+      "novig_market": "01a0c2e6-dd92-7be3-9613-5c3d2de81a7a",
+      "novig_side": "MIA -10.5",
+      "novig_ask": "0.041",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "228",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.008347362500",
+      "over_1_by": "0.008347362500",
+      "edge_pct_of_payout": "-0.834736250000",
+      "touch_qty_dollar_contracts": "228",
+      "pm_bankers_fee_on_100": "0.23",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0083",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['KC', 'MIA'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 10.5 sides KC +10.5 vs MIA -10.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "LV",
+        "NO"
+      ],
+      "kind": "spread",
+      "line": "14.5",
+      "pm_market": "asc-nfl-lv-no-2026-09-27-neg-14pt5",
+      "pm_side": "NO +14.5",
+      "pm_ask": "0.9250",
+      "pm_fee_per_contract": "0.004821562500",
+      "pm_touch_qty": "2500.0000",
+      "pm_price_source": "book",
+      "novig_market": "01a0cc05-7fd4-7b62-b536-3c39af7c4a30",
+      "novig_side": "LV -14.5",
+      "novig_ask": "0.08",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "205",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.009821562500",
+      "over_1_by": "0.009821562500",
+      "edge_pct_of_payout": "-0.982156250000",
+      "touch_qty_dollar_contracts": "205",
+      "pm_bankers_fee_on_100": "0.48",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0098",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['LV', 'NO'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 14.5 sides NO +14.5 vs LV -14.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "ARI",
+        "SF"
+      ],
+      "kind": "moneyline",
+      "line": null,
+      "pm_market": "aec-nfl-ari-sf-2026-09-27",
+      "pm_side": "SF",
+      "pm_ask": "0.7800",
+      "pm_fee_per_contract": "0.011926200000",
+      "pm_touch_qty": "757297.6800",
+      "pm_price_source": "book",
+      "novig_market": "01a0aa74-364e-74e2-8175-4ea0b13a506c",
+      "novig_side": "ARI",
+      "novig_ask": "0.22",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "4019.8",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.011926200000",
+      "over_1_by": "0.011926200000",
+      "edge_pct_of_payout": "-1.192620000000",
+      "touch_qty_dollar_contracts": "4019.8",
+      "pm_bankers_fee_on_100": "1.19",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0119",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['ARI', 'SF'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "moneyline key winner sides SF vs ARI."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "KC",
+        "MIA"
+      ],
+      "kind": "spread",
+      "line": "10.5",
+      "pm_market": "asc-nfl-kc-mia-2026-09-27-neg-10pt5",
+      "pm_side": "MIA +10.5",
+      "pm_ask": "0.5100",
+      "pm_fee_per_contract": "0.017368050000",
+      "pm_touch_qty": "28548.4900",
+      "pm_price_source": "book",
+      "novig_market": "01a0aa74-33f2-7a82-81eb-454982f6c749",
+      "novig_side": "KC -10.5",
+      "novig_ask": "0.485",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "19038.24",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.012368050000",
+      "over_1_by": "0.012368050000",
+      "edge_pct_of_payout": "-1.236805000000",
+      "touch_qty_dollar_contracts": "19038.24",
+      "pm_bankers_fee_on_100": "1.74",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0124",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['KC', 'MIA'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 10.5 sides MIA +10.5 vs KC -10.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "SEA",
+        "WAS"
+      ],
+      "kind": "moneyline",
+      "line": null,
+      "pm_market": "aec-nfl-sea-was-2026-09-27",
+      "pm_side": "SEA",
+      "pm_ask": "0.7650",
+      "pm_fee_per_contract": "0.012494362500",
+      "pm_touch_qty": "918518.6200",
+      "pm_price_source": "book",
+      "novig_market": "01a0aa74-34b0-7c22-83ab-e90e9ff136d9",
+      "novig_side": "WAS",
+      "novig_ask": "0.235",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "555.03",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.012494362500",
+      "over_1_by": "0.012494362500",
+      "edge_pct_of_payout": "-1.249436250000",
+      "touch_qty_dollar_contracts": "555.03",
+      "pm_bankers_fee_on_100": "1.25",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0125",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['SEA', 'WAS'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "moneyline key winner sides SEA vs WAS."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "BAL",
+        "DAL"
+      ],
+      "kind": "spread",
+      "line": "3.5",
+      "pm_market": "asc-nfl-bal-dal-2026-09-27-pos-3pt5",
+      "pm_side": "DAL -3.5",
+      "pm_ask": "0.2550",
+      "pm_fee_per_contract": "0.013203262500",
+      "pm_touch_qty": "130.0400",
+      "pm_price_source": "book",
+      "novig_market": "01a0aa74-36db-7163-8ff2-10b34bcab573",
+      "novig_side": "BAL +3.5",
+      "novig_ask": "0.745",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "8913.73",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.013203262500",
+      "over_1_by": "0.013203262500",
+      "edge_pct_of_payout": "-1.320326250000",
+      "touch_qty_dollar_contracts": "130.0400",
+      "pm_bankers_fee_on_100": "1.32",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0132",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['BAL', 'DAL'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "spread key 3.5 sides DAL -3.5 vs BAL +3.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "DEN",
+        "LAR"
+      ],
+      "kind": "total",
+      "line": "24.5",
+      "pm_market": "tsc-nfl-lar-den-2026-09-27-total-24pt5",
+      "pm_side": "Over 24.5",
+      "pm_ask": "0.9450",
+      "pm_fee_per_contract": "0.003612262500",
+      "pm_touch_qty": "4077.2200",
+      "pm_price_source": "book",
+      "novig_market": "01a0c19d-370b-71f0-9340-f7dc7ee8df0a",
+      "novig_side": "Under 24.5",
+      "novig_ask": "0.065",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "112",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.013612262500",
+      "over_1_by": "0.013612262500",
+      "edge_pct_of_payout": "-1.361226250000",
+      "touch_qty_dollar_contracts": "112",
+      "pm_bankers_fee_on_100": "0.36",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0136",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['DEN', 'LAR'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "total key 24.5 sides Over 24.5 vs Under 24.5."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    },
+    {
+      "game": [
+        "KC",
+        "MIA"
+      ],
+      "kind": "moneyline",
+      "line": null,
+      "pm_market": "aec-nfl-kc-mia-2026-09-27",
+      "pm_side": "KC",
+      "pm_ask": "0.8550",
+      "pm_fee_per_contract": "0.008616262500",
+      "pm_touch_qty": "1581116.4200",
+      "pm_price_source": "book",
+      "novig_market": "01a0aa74-33f2-7a82-81eb-4274cdc232eb",
+      "novig_side": "MIA",
+      "novig_ask": "0.15",
+      "novig_fee_per_contract": "0",
+      "novig_touch_qty_dollar_contracts": "2927.85",
+      "novig_price_source": "book",
+      "round_trip_cost": "1.013616262500",
+      "over_1_by": "0.013616262500",
+      "edge_pct_of_payout": "-1.361626250000",
+      "touch_qty_dollar_contracts": "2927.85",
+      "pm_bankers_fee_on_100": "0.86",
+      "round_trip_per_contract_after_pm_cent_round_on_100": "1.0136",
+      "book_flags": [],
+      "gates": {
+        "same_event": {
+          "pass": true,
+          "detail": "Teams ['KC', 'MIA'] on both venues."
+        },
+        "same_line": {
+          "pass": true,
+          "detail": "moneyline key winner sides KC vs MIA."
+        },
+        "ot_void": {
+          "pass": false,
+          "detail": "OT: Polymarket text includes overtime. Novig full-game spread, total, and winner contracts include overtime (Ludlow NFL spread, total, and winner anchors). Void: Polymarket uses a two-week replay window then last fair market price. Novig voids field is FMV. A Novig void on these contracts settles on the fair-value composite (30-minute window), and a regular-season game that does not start within 24 hours or resume within 48 hours voids. Those void prices and windows are not the same rule."
+        },
+        "settlement_source": {
+          "pass": true,
+          "detail": "Primary grade on a completed game is the NFL official result on both: Polymarket US says the outcome is sourced from the relevant governing body, and the Novig NFL anchors name the NFL as source agency. Fallback ladders are not identical. Polymarket US may use one wire service. Novig's fourth step asks for two independent sources. Polymarket description names a governing-body source: True. Novig voids field FMV is not the grade source."
+        }
+      },
+      "true_arb": false
+    }
+  ]
+}
