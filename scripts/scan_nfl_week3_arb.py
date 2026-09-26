@@ -589,7 +589,6 @@ def main() -> None:
     nv_markets_payload = fetch_novig_markets(
         "NFL", "SPREAD,TOTAL,MONEY", STARTS_AFTER_MS, STARTS_BEFORE_MS
     )
-    pulled = datetime.now(PT)
 
     pm_markets: list[VenueMarket] = []
     pm_games = []
@@ -705,6 +704,8 @@ def main() -> None:
     price_locks.sort(key=lambda row: Decimal(row["over_1_by"]))
     overs.sort(key=lambda row: Decimal(row["over_1_by"]))
     near = overs[:10]
+    liquid = [row for row in overs if Decimal(row["touch_qty_dollar_contracts"]) >= LIQUID_ML_CONTRACTS][:8]
+    pulled = datetime.now(PT)
 
     games = []
     line_shop = []
@@ -782,6 +783,7 @@ def main() -> None:
         "true_arbs": true_arbs,
         "price_locks_failed_gate": price_locks[:20],
         "near_misses": near,
+        "near_misses_min_touch_100": liquid,
         "line_shop": line_shop,
         "games": games,
         "sources": {
@@ -849,8 +851,7 @@ def render_markdown(result: dict, snap_rel: str) -> str:
     lines = [
         "# NFL Week 3 Polymarket US vs Novig arb scan",
         "",
-        f"**Stamped:** {result['stamped_pt']}",
-        f"**Books finished loading:** {result['pull_finished_pt']}",
+        f"**Stamped:** {result['stamped_pt']} (catalog pull). Order books were read in that same run and written at {result['pull_finished_pt']}.",
         "**Phase 0.** Public reads only. No order was placed, queued, or submitted.",
         "",
         "## Tim",
@@ -871,6 +872,7 @@ def render_markdown(result: dict, snap_rel: str) -> str:
         "- Novig WHEN_LIVE is $0 on a pregame take. A live take would use coefficient × p × (1 − p) per $1 contract. Maker credit is not subtracted.",
         "- Both legs are priced as takes: Polymarket offer, or one minus the best bid for the short side; Novig ask = 1 − best bid on the other outcome.",
         "- Novig book qty is a 1-cent contract. Dollar contracts in this report are qty / 100.",
+        "- Tables below are rounded to four decimal places. The JSON file keeps the exact fee.",
         f"- Moneyline is included only when the touch on the priced direction is at least {result['liquidity_rule']['moneyline_min_dollar_contracts_at_touch']} dollar contracts on each venue. Spreads and totals are priced at the touch with size as a caveat.",
         "",
         "## Gates",
@@ -917,7 +919,10 @@ def render_markdown(result: dict, snap_rel: str) -> str:
         for row in result["price_locks_failed_gate"]:
             lines.extend(_hit_block(row))
     lines.extend(["", "## Nearest same-line misses", ""])
-    lines.append("Round trip after the fees above, minus $1. Smaller is closer. Different lines are not in this list.")
+    lines.append(
+        "Round trip after the fees above, minus $1. Smaller is closer. Different lines are not in this list. "
+        "Every row fails the OT/void gate, so a sum under $1 would still not be a true arb."
+    )
     lines.append("")
     if not result["near_misses"]:
         lines.append("No same-line pair had two executable asks.")
@@ -925,23 +930,18 @@ def render_markdown(result: dict, snap_rel: str) -> str:
         lines.append("| Game | Market | PM side @ ask | PM fee | Novig side @ ask | Novig fee | Sum | Over $1 by | Edge % of $1 | Touch $ contracts |")
         lines.append("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
         for row in result["near_misses"]:
-            lines.append(
-                "| {teams} | {kind} {line} | {ps} @ {pa} | {pf} | {ns} @ {na} | {nf} | {cost} | {over} | {edge} | {qty} |".format(
-                    teams=" / ".join(row["game"]),
-                    kind=row["kind"],
-                    line=row["line"] or "ML",
-                    ps=row["pm_side"],
-                    pa=row["pm_ask"],
-                    pf=row["pm_fee_per_contract"],
-                    ns=row["novig_side"],
-                    na=row["novig_ask"],
-                    nf=row["novig_fee_per_contract"],
-                    cost=row["round_trip_cost"],
-                    over=row["over_1_by"],
-                    edge=row["edge_pct_of_payout"],
-                    qty=row["touch_qty_dollar_contracts"],
-                )
-            )
+            lines.append(_miss_row(row))
+    lines.extend(["", "## Nearest misses with at least 100 dollar contracts at the touch", ""])
+    lines.append("Same rule as the table above. The size floor drops one-lot quotes.")
+    lines.append("")
+    liquid_rows = result.get("near_misses_min_touch_100") or []
+    if not liquid_rows:
+        lines.append("No same-line touch had 100 dollar contracts on both asks.")
+    else:
+        lines.append("| Game | Market | PM side @ ask | PM fee | Novig side @ ask | Novig fee | Sum | Over $1 by | Edge % of $1 | Touch $ contracts |")
+        lines.append("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |")
+        for row in liquid_rows:
+            lines.append(_miss_row(row))
     lines.extend(["", "## Line shop only", ""])
     lines.append("Each venue's main line is the full-game listing whose touch midpoint is closest to 50 cents. A mismatch is not an arb.")
     lines.append("")
@@ -969,7 +969,7 @@ def render_markdown(result: dict, snap_rel: str) -> str:
             lines.append(f"| {game['game']} | — | — | — | — | — |")
             continue
         lines.append(
-            f"| {game['game']} | {row['kind']} | {row['line'] or 'ML'} | {row['round_trip_cost']} | {row['over_1_by']} | {row['touch_qty_dollar_contracts']} |"
+            f"| {game['game']} | {row['kind']} | {row['line'] or 'ML'} | {_d(row['round_trip_cost'])} | {_d(row['over_1_by'])} | {_qty(row['touch_qty_dollar_contracts'])} |"
         )
     lines.extend(
         [
@@ -990,6 +990,35 @@ def render_markdown(result: dict, snap_rel: str) -> str:
     return "\n".join(lines)
 
 
+def _d(value: str, places: str = "0.0001") -> str:
+    return format(Decimal(value).quantize(Decimal(places)), "f")
+
+
+def _qty(value: str) -> str:
+    text = format(Decimal(value).quantize(Decimal("0.01")), "f")
+    if text.endswith(".00"):
+        return text[:-3]
+    return text.rstrip("0").rstrip(".") if "." in text else text
+
+
+def _miss_row(row: dict) -> str:
+    return "| {teams} | {kind} {line} | {ps} @ {pa} | {pf} | {ns} @ {na} | {nf} | {cost} | {over} | {edge} | {qty} |".format(
+        teams=" / ".join(row["game"]),
+        kind=row["kind"],
+        line=row["line"] or "ML",
+        ps=row["pm_side"],
+        pa=_d(row["pm_ask"]),
+        pf=_d(row["pm_fee_per_contract"]),
+        ns=row["novig_side"],
+        na=_d(row["novig_ask"]),
+        nf=_d(row["novig_fee_per_contract"]),
+        cost=_d(row["round_trip_cost"]),
+        over=_d(row["over_1_by"]),
+        edge=_d(row["edge_pct_of_payout"], "0.001"),
+        qty=_qty(row["touch_qty_dollar_contracts"]),
+    )
+
+
 def _hit_block(row: dict) -> list[str]:
     teams = " / ".join(row["game"])
     gates = ", ".join(
@@ -998,11 +1027,11 @@ def _hit_block(row: dict) -> list[str]:
     return [
         f"### {teams} {row['kind']} {row['line'] or 'winner'}",
         "",
-        f"- Polymarket US: buy {row['pm_side']} at {row['pm_ask']}, fee {row['pm_fee_per_contract']} per contract, touch qty {row['pm_touch_qty']} ({row['pm_market']}).",
-        f"- Novig: buy {row['novig_side']} at {row['novig_ask']}, fee {row['novig_fee_per_contract']} per contract, touch {row['novig_touch_qty_dollar_contracts']} dollar contracts ({row['novig_market']}).",
-        f"- Round trip {row['round_trip_cost']}. Over $1 by {row['over_1_by']}. Edge {row['edge_pct_of_payout']}% of the $1 payout.",
-        f"- 100-contract Polymarket fee after cent rounding: {row['pm_bankers_fee_on_100']}. Per-contract round trip on that order: {row['round_trip_per_contract_after_pm_cent_round_on_100']}.",
-        f"- Size caveat: locked size at the touch is {row['touch_qty_dollar_contracts']} dollar contracts, the smaller quote.",
+        f"- Polymarket US: buy {row['pm_side']} at {_d(row['pm_ask'])}, fee {_d(row['pm_fee_per_contract'])} per contract, touch qty {_qty(row['pm_touch_qty'])} ({row['pm_market']}).",
+        f"- Novig: buy {row['novig_side']} at {_d(row['novig_ask'])}, fee {_d(row['novig_fee_per_contract'])} per contract, touch {_qty(row['novig_touch_qty_dollar_contracts'])} dollar contracts ({row['novig_market']}).",
+        f"- Round trip {_d(row['round_trip_cost'])}. Over $1 by {_d(row['over_1_by'])}. Edge {_d(row['edge_pct_of_payout'], '0.001')}% of the $1 payout.",
+        f"- 100-contract Polymarket fee after cent rounding: {_d(row['pm_bankers_fee_on_100'], '0.01')}. Per-contract round trip on that order: {_d(row['round_trip_per_contract_after_pm_cent_round_on_100'])}.",
+        f"- Size caveat: locked size at the touch is {_qty(row['touch_qty_dollar_contracts'])} dollar contracts, the smaller quote.",
         f"- Gates: {gates}.",
         "",
     ]
