@@ -1,0 +1,282 @@
+{
+  "stamped_pt": "2026-09-26T19:15:00-07:00",
+  "phase": "paper",
+  "note": "Executable asks at retrieval. Not an order. American odds rounded from the ask. Polymarket fee coefficient 0.0695. Novig pregame fee treated as 0 because charged WHEN_LIVE.",
+  "games": [
+    {
+      "game": "New York Mets @ Washington Nationals",
+      "first_pitch_pt": "2026-09-27 10:05",
+      "side": {
+        "market": "run_line",
+        "pick": "NYM -1.5",
+        "venue": "novig",
+        "ask": 0.385,
+        "american": 160
+      },
+      "total": {
+        "market": "total",
+        "pick": "Under 8.5",
+        "venue": "novig",
+        "ask": 0.535,
+        "american": -115
+      }
+    },
+    {
+      "game": "Baltimore Orioles @ New York Yankees",
+      "first_pitch_pt": "2026-09-27 10:05",
+      "side": {
+        "market": "moneyline",
+        "pick": "BAL",
+        "venue": "novig",
+        "ask": 0.445,
+        "american": 125
+      },
+      "total": {
+        "market": "total",
+        "pick": "Under 7.5",
+        "venue": "novig",
+        "ask": 0.5,
+        "american": -100
+      }
+    },
+    {
+      "game": "Chicago Cubs @ Boston Red Sox",
+      "first_pitch_pt": "2026-09-27 12:05",
+      "side": {
+        "market": "run_line",
+        "pick": "CHC -1.5",
+        "venue": "polymarket_us",
+        "ask": 0.41,
+        "american": 144
+      },
+      "total": {
+        "market": "total",
+        "pick": "MISSING",
+        "venue": null,
+        "ask": null,
+        "american": null
+      }
+    },
+    {
+      "game": "Houston Astros @ Athletics",
+      "first_pitch_pt": "2026-09-27 12:05",
+      "side": {
+        "market": "moneyline",
+        "pick": "HOU",
+        "venue": "novig",
+        "ask": 0.58,
+        "american": -138
+      },
+      "total": {
+        "market": "total",
+        "pick": "MISSING",
+        "venue": null,
+        "ask": null,
+        "american": null
+      }
+    },
+    {
+      "game": "Los Angeles Dodgers @ San Francisco Giants",
+      "first_pitch_pt": "2026-09-27 12:05",
+      "side": {
+        "market": "run_line",
+        "pick": "LAD -1.5",
+        "venue": "polymarket_us",
+        "ask": 0.475,
+        "american": 111
+      },
+      "total": {
+        "market": "total",
+        "pick": "MISSING",
+        "venue": null,
+        "ask": null,
+        "american": null
+      }
+    },
+    {
+      "game": "Tampa Bay Rays @ Philadelphia Phillies",
+      "first_pitch_pt": "2026-09-27 12:05",
+      "side": {
+        "market": "moneyline",
+        "pick": "TB",
+        "venue": "cbs",
+        "ask": null,
+        "american": 126
+      },
+      "total": {
+        "market": "total",
+        "pick": "Under 7.5",
+        "venue": "novig",
+        "ask": 0.555,
+        "american": -125
+      }
+    },
+    {
+      "game": "Cincinnati Reds @ Toronto Blue Jays",
+      "first_pitch_pt": "2026-09-27 12:07",
+      "side": {
+        "market": "moneyline",
+        "pick": "CIN",
+        "venue": "cbs",
+        "ask": null,
+        "american": 150
+      },
+      "total": {
+        "market": "total",
+        "pick": "Over 8.5",
+        "venue": "polymarket_us",
+        "ask": 0.515,
+        "american": -106
+      }
+    },
+    {
+      "game": "Cleveland Guardians @ Kansas City Royals",
+      "first_pitch_pt": "2026-09-27 12:10",
+      "side": {
+        "market": "moneyline",
+        "pick": "CLE",
+        "venue": "novig",
+        "ask": 0.54,
+        "american": -117
+      },
+      "total": {
+        "market": "total",
+        "pick": "MISSING",
+        "venue": null,
+        "ask": null,
+        "american": null
+      }
+    },
+    {
+      "game": "Pittsburgh Pirates @ Detroit Tigers",
+      "first_pitch_pt": "2026-09-27 12:10",
+      "side": {
+        "market": "moneyline",
+        "pick": "PIT",
+        "venue": "novig",
+        "ask": 0.55,
+        "american": -122
+      },
+      "total": {
+        "market": "total",
+        "pick": "Under 8.5",
+        "venue": "novig",
+        "ask": 0.55,
+        "american": -122
+      }
+    },
+    {
+      "game": "Arizona Diamondbacks @ San Diego Padres",
+      "first_pitch_pt": "2026-09-27 12:10",
+      "side": {
+        "market": "moneyline",
+        "pick": "ARI",
+        "venue": "polymarket_us",
+        "ask": 0.49,
+        "american": 104
+      },
+      "total": {
+        "market": "total",
+        "pick": "MISSING",
+        "venue": null,
+        "ask": null,
+        "american": null
+      }
+    },
+    {
+      "game": "Los Angeles Angels @ Seattle Mariners",
+      "first_pitch_pt": "2026-09-27 12:10",
+      "side": {
+        "market": "run_line",
+        "pick": "SEA -1.5",
+        "venue": "novig",
+        "ask": 0.435,
+        "american": 130
+      },
+      "total": {
+        "market": "total",
+        "pick": "Under 7.5",
+        "venue": "novig",
+        "ask": 0.55,
+        "american": -122
+      }
+    },
+    {
+      "game": "Texas Rangers @ Minnesota Twins",
+      "first_pitch_pt": "2026-09-27 12:10",
+      "side": {
+        "market": "moneyline",
+        "pick": "TEX",
+        "venue": "novig",
+        "ask": 0.54,
+        "american": -117
+      },
+      "total": {
+        "market": "total",
+        "pick": "MISSING",
+        "venue": null,
+        "ask": null,
+        "american": null
+      }
+    },
+    {
+      "game": "Colorado Rockies @ Chicago White Sox",
+      "first_pitch_pt": "2026-09-27 12:10",
+      "side": {
+        "market": "run_line",
+        "pick": "CWS -1.5",
+        "venue": "novig",
+        "ask": 0.485,
+        "american": 106
+      },
+      "total": {
+        "market": "total",
+        "pick": "Over 8.5",
+        "venue": "novig",
+        "ask": 0.495,
+        "american": 102
+      }
+    },
+    {
+      "game": "Atlanta Braves @ Miami Marlins",
+      "first_pitch_pt": "2026-09-27 12:10",
+      "side": {
+        "market": "run_line",
+        "pick": "ATL -1.5",
+        "venue": "novig",
+        "ask": 0.385,
+        "american": 160
+      },
+      "total": {
+        "market": "total",
+        "pick": "Over 8.5",
+        "venue": "novig",
+        "ask": 0.54,
+        "american": -117
+      }
+    },
+    {
+      "game": "St. Louis Cardinals @ Milwaukee Brewers",
+      "first_pitch_pt": "2026-09-27 12:10",
+      "side": {
+        "market": "run_line",
+        "pick": "MIL -1.5",
+        "venue": "novig",
+        "ask": 0.48,
+        "american": 108
+      },
+      "total": {
+        "market": "total",
+        "pick": "Under 6.5",
+        "venue": "novig",
+        "ask": 0.46,
+        "american": 117
+      }
+    }
+  ],
+  "counts": {
+    "games": 15,
+    "priced_totals": 9,
+    "missing_totals": 6
+  }
+}
