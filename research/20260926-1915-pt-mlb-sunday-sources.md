@@ -1,6 +1,6 @@
 # Sources for the 2026-09-27 MLB Sunday paper pack
 
-**Stamped:** 2026-09-26 7:15 p.m. Pacific Time
+**Stamped:** 2026-09-26 7:15 p.m. Pacific Time. **Revised:** 2026-09-26 7:18 p.m. PT.
 **Window:** reads from about 7:04 p.m. to 7:13 p.m. PT on 2026-09-26, except where a page prints its own clock.
 **Phase 0:** Public reads only. No order was placed.
 
@@ -71,8 +71,36 @@ Polymarket US prices in the pack are executable asks: best ask on the long side,
 
 Snapshot of the prices used: `snapshots/20260926-1915-pt-mlb-sunday-lines.json`.
 
-## What was missing
+## Desk line files, then a live check
 
-Full-game totals with a live quote were missing on Covers, on the CBS board, on Novig, and on Polymarket US for Cubs at Red Sox, Astros at Athletics, Dodgers at Giants, Guardians at Royals, and Diamondbacks at Padres. Rangers at Twins has Polymarket total markets at 7.5, 8.5, and 9.5 with empty bid and ask, and no Novig total and no Covers total. Those six totals are marked MISSING in the picks file. No number was filled in.
+The local desk attached four files. They are the line source this revision starts from.
 
-Novig has no full-game spread book for Dodgers-Giants, Cubs-Red Sox, Astros-Athletics, Guardians-Royals, or Diamondbacks-Padres. The Rangers-Twins 1.5 market was listed with no bids.
+| File | What it actually contains |
+| --- | --- |
+| Schedule markdown, stamp about 7:04 p.m. PT | 15 games, probables, and an explicit Tropicana vs Fenway warning |
+| Schedule raw JSON | Same 15 games. Cubs at Red Sox gamePk 824705, description "at Tropicana Field", venue id 12 |
+| `20260926-1905-pt-mlb-sunday-espn-core-odds` | 15 event ids. Every row is a parser error: `'$ref'` on 9 games and `list index out of range` on 6. No prices in the file. |
+| `20260926-1905-pt-mlb-sunday-espn-dk-odds` | ESPN odds page, DraftKings widget, section "Sunday, September 27", 9 games with ML, run line, and total |
+
+The core file was not ignored. It has no numbers to quote. The widget file does. A live read of the same DraftKings feed on the ESPN scoreboard, at 7:18 p.m. PT, confirms those 9 games and still returns no `odds` array on the 6 that the core file marked `list index out of range`.
+
+https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=20260927
+
+Provider on every priced row: DraftKings. Clean extract: `snapshots/20260926-1918-pt-mlb-sunday-espn-dk-lines.json`.
+
+Widget vs live scoreboard, same provider, about 13 minutes apart. Totals and run lines on the widget match the live close except where noted.
+
+| Game | Widget 7:05 p.m. PT | Live scoreboard 7:18 p.m. PT |
+| --- | --- | --- |
+| Rays ML | +109 / Phillies -132 | +113 / Phillies -137 |
+| Phillies -1.5 | +163 | +167 |
+| White Sox -1.5 | -102 | -105 |
+| Rockies +1.5 | -118 | -115 |
+
+Everything else on the 9-game widget matches the live close, including Mets run line OFF, Yankees total 8, Phillies total 7, Pirates total 8, Brewers total 7, Mariners total 7.
+
+## What was missing on DraftKings
+
+No DraftKings moneyline, run line, or total on the live scoreboard for: Cubs at Red Sox (Tropicana, neutral, rescheduled from 9/26), Astros at Athletics, Dodgers at Giants, Guardians at Royals, Rangers at Twins, Diamondbacks at Padres. Those six totals stay MISSING. No number was filled in. Sides on those six use Polymarket US or Novig and are labeled venue-only.
+
+Novig has no full-game spread book for Dodgers-Giants, Cubs-Red Sox, Astros-Athletics, Guardians-Royals, or Diamondbacks-Padres. The Rangers-Twins 1.5 market was listed with no bids. Polymarket US and Novig do list MLB. They are not empty.

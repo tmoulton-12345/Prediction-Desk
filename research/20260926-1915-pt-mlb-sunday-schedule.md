@@ -1,6 +1,6 @@
 # MLB Sunday schedule: 2026-09-27
 
-**Stamped:** 2026-09-26 7:15 p.m. Pacific Time
+**Stamped:** 2026-09-26 7:15 p.m. Pacific Time. **Revised:** 2026-09-26 7:18 p.m. PT after the desk schedule file and a live ESPN scoreboard check.
 **Slate:** Sunday, September 27, 2026, America/Los_Angeles. **15 games.** Every club is on the card. This is the last date on the 2026 regular-season schedule.
 **Phase 0:** Paper only. This file is a schedule. It is not a bet, not a Tim-approve card, and not an order.
 
@@ -38,7 +38,7 @@ The schedule `weather` object was empty on every game. Outdoor notes below are N
 
 Records on that same schedule read, wins-losses: Mets 74-87, Nationals 76-85, Orioles 79-82, Yankees 93-68, Cubs 88-73, Red Sox 87-74, Astros 79-81, Athletics 64-96, Dodgers 99-62, Giants 65-96, Rays 97-63, Phillies 87-73, Reds 75-86, Blue Jays 78-83, Guardians 85-76, Royals 68-93, Pirates 81-80, Tigers 76-85, Diamondbacks 86-74, Padres 89-71, Angels 62-98, Mariners 74-86, Rangers 80-81, Twins 76-85, Rockies 58-103, White Sox 83-78, Braves 94-67, Marlins 79-82, Cardinals 77-84, Brewers 102-59.
 
-The Cubs at Red Sox game carries the schedule description "at Tropicana Field." The venue feed lists that park as a dome in St. Petersburg. It is a Red Sox home game on the schedule, played in the Rays' park.
+The Cubs at Red Sox game is the venue to treat carefully. The desk schedule file, stamped about 7:04 p.m. PT, already flags it: the Stats API hydrate names Tropicana Field, and the note on that file says public sites also list Fenway. The raw schedule JSON for gamePk 824705 has `description` "at Tropicana Field" and `venue.name` "Tropicana Field" (venue id 12). A live ESPN scoreboard read at 7:18 p.m. PT agrees: venue Tropicana Field, St. Petersburg, `neutralSite` true, note "Rescheduled from 9/26." This pack locks Tropicana Field, not Fenway. It is a dome on the MLB venue feed. ESPN had no probable pitchers and no DraftKings odds row for this game.
 
 ## Season lines for listed probables
 
@@ -69,7 +69,7 @@ Season pitching lines are the Stats API people feed for 2026, group pitching, ty
 | Andre Pallante | STL | 12-8 | 3.61 | 157.0 | 106 | 1.24 | 28 |
 | Jacob Misiorowski | MIL | 15-5 | 1.86 | 169.1 | 247 | 0.80 | 29 |
 
-Covers' odds page, last updated Sep 26, 2026, 10:06 p.m. ET, names the same starters for the games where the MLB feed has both names. It leaves Dodgers, Giants, Cubs, Red Sox, Astros, Guardians, and Padres blank, and it lists only Brady Basso for the Athletics. That Basso name is not on the MLB probable feed, so this pack does not treat him as the starter.
+The desk schedule and the MLB feed leave both Astros and Athletics probables blank. The ESPN scoreboard at 7:18 p.m. PT lists Brady Basso for the Athletics and no Astros name. Basso is an ESPN listing, not the Stats API probable. Texas is the other starter mismatch: the Stats API lists MacKenzie Gore against Dean Kremer, and the ESPN scoreboard lists Kremer with the Rangers probable still blank.
 
 A CBS gametracker preview for Orioles at Yankees still shows Carlos Rodón opposite Baz. The MLB probable feed shows Elmer Rodríguez. The prices on the live boards (Yankees around -133 to -143) sit with the Rodríguez season line, not with a 2.95 ERA arm. The card uses the MLB probable.
 

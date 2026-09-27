@@ -1,6 +1,6 @@
 # MLB Sunday research pack: 2026-09-27
 
-**Stamped:** 2026-09-26 7:15 p.m. Pacific Time
+**Stamped:** 2026-09-26 7:15 p.m. Pacific Time. **Revised:** 2026-09-26 7:18 p.m. PT. Consensus prices are DraftKings on ESPN. The desk widget file covers 9 games. A live scoreboard read at 7:18 p.m. PT matches those 9 and still has no odds on the other 6. Polymarket US and Novig both list MLB. They are the price used only when they beat DraftKings on the same side and line, or when DraftKings has no line.
 **Slate:** 15 games, first pitch 10:05 a.m. to 12:10 p.m. PT. Schedule file: `research/20260926-1915-pt-mlb-sunday-schedule.md`.
 **Venues:** Polymarket US and Novig both list this MLB slate. Quotes are in the picks file and in `snapshots/20260926-1915-pt-mlb-sunday-lines.json`.
 **Phase 0:** Paper only. These notes are research. They are not a Tim-approve trade card, not an order, and not a sizing sheet beyond the $20 paper examples in the picks file.
@@ -60,11 +60,11 @@ Baz (6-15, 4.11, 179.2 IP, 31 starts) against Elmer Rodríguez (0-3, 5.40, 26.2 
 
 ### Cubs at Red Sox, 12:05 p.m. PT, Tropicana Field
 
-Probables are blank on the MLB feed and on the Covers Sunday row. The park is a dome. Cubs are 88-73, clinched, indicator w, +143 run differential, 3-5 in eight finals (27 scored, 27 allowed). Red Sox are 87-74, clinched, indicator w, +82, 5-4 in nine finals and only 19 runs scored and 19 allowed in those nine. Covers has a moneyline (Cubs about -143 on the first column, 7/10). Run line and total are blank on Covers and on CBS. Polymarket US has a moneyline and a 1.5 run line and no full-game total. Novig has a moneyline and no total and no 1.5 book.
+This is a neutral-site game on the ESPN scoreboard, with the note "Rescheduled from 9/26." Stats API and ESPN both name Tropicana Field. The park is a dome. Probables are blank on both feeds. DraftKings has no moneyline, run line, or total on the ESPN scoreboard, which matches the empty odds row in the desk core file (`list index out of range` on event 401817089). Cubs are 88-73, clinched, indicator w, +143 run differential, 3-5 in eight finals (27 scored, 27 allowed). Red Sox are 87-74, clinched, indicator w, +82, 5-4 in nine finals and only 19 runs scored and 19 allowed in those nine. Polymarket US has a moneyline and a 1.5 run line and no full-game total. Novig has a moneyline and no total and no 1.5 book.
 
 ### Astros at Athletics, 12:05 p.m. PT
 
-Probables are blank on the MLB feed. Covers lists only Brady Basso for the Athletics and no Astros name. That single name is not used as a starter. Sutter Health Park is open and the Sunday period is mostly sunny, 76 F, wind 6 mph, precip 1 percent. Astros are 79-81, 0.5 games back of Texas, division elimination number 2, wild-card elimination E, so Sunday is a division game only. Athletics are 64-96 with a -218 run differential. The Saturday game in this series was still in progress at 7:12 p.m. PT. Covers has a moneyline and no run line or total.
+Probables are blank on the MLB feed and on the desk schedule. ESPN's 7:18 p.m. scoreboard lists Brady Basso for the Athletics and leaves Houston blank. DraftKings has no odds on this game. Sutter Health Park is open and the Sunday period is mostly sunny, 76 F, wind 6 mph, precip 1 percent. Astros are 79-81, 0.5 games back of Texas, division elimination number 2, wild-card elimination E, so Sunday is a division game only. Athletics are 64-96 with a -218 run differential. The Saturday game in this series was still in progress at 7:12 p.m. PT. Covers has a moneyline and no run line or total.
 
 ### Dodgers at Giants, 12:05 p.m. PT
 
@@ -72,7 +72,7 @@ Probables are blank. Covers' Saturday final row shows Blake Snell and Matt Wilki
 
 ### Rays at Phillies, 12:05 p.m. PT
 
-Martinez (15-5, 2.94, 177.1 IP, WHIP 1.07) against Wheeler (13-5, 3.06, 156.0 IP, 188 strikeouts, WHIP 1.06). Citizens Bank Park is open. NWS Sunday period, update 1:11 p.m. PT: 66 F, north wind 15 mph, 97 percent chance of rain showers. Rays are 97-63, division champ, indicator z, 5-4 in nine finals (33 scored, 25 allowed). Phillies are 87-73, division elimination E, wild-card elimination number still a dash, not clinched, 3-5 in eight finals (24 scored, 33 allowed). The Saturday game was still in progress, so the Sunday bullpens are not a known quantity. Covers' main total is 7.5, with the under the favorite on the first book column (3/4, which is -133).
+Martinez (15-5, 2.94, 177.1 IP, WHIP 1.07) against Wheeler (13-5, 3.06, 156.0 IP, 188 strikeouts, WHIP 1.06). Citizens Bank Park is open. NWS Sunday period, update 1:11 p.m. PT: 66 F, north wind 15 mph, 97 percent chance of rain showers. Rays are 97-63, division champ, indicator z, 5-4 in nine finals (33 scored, 25 allowed). Phillies are 87-73, division elimination E, wild-card elimination number still a dash, not clinched, 3-5 in eight finals (24 scored, 33 allowed). The Saturday game was still in progress, so the Sunday bullpens are not a known quantity. DraftKings' close at 7:18 p.m. PT is 7, under -103 and over -117. The 7:05 p.m. widget had the same total.
 
 ### Reds at Blue Jays, 12:07 p.m. PT
 
@@ -92,7 +92,7 @@ Soroka is listed (9-5, 3.31, 111.1 IP). The Padres probable is blank. Petco is o
 
 ### Angels at Mariners, 12:10 p.m. PT
 
-Kikuchi (1-6, 4.88, 62.2 IP, WHIP 1.55) against Gilbert (12-11, 3.81, 182.0 IP, 197 strikeouts, WHIP 1.10). T-Mobile Park is retractable. The Sunday outdoor period is dry and light, and the roof position was not posted, so weather is not an input. Mariners are 74-86 and eliminated, 3-4 in seven finals (25 scored, 35 allowed). Angels are 62-98, 4-4 in eight (34 scored, 45 allowed). The Saturday game was still in progress. Covers total is 7.5 with the under favored. The Mariners moneyline is -167 to -186. The -1.5 is plus money on both Polymarket US and Novig.
+Kikuchi (1-6, 4.88, 62.2 IP, WHIP 1.55) against Gilbert (12-11, 3.81, 182.0 IP, 197 strikeouts, WHIP 1.10). T-Mobile Park is retractable. The Sunday outdoor period is dry and light, and the roof position was not posted, so weather is not an input. Mariners are 74-86 and eliminated, 3-4 in seven finals (25 scored, 35 allowed). Angels are 62-98, 4-4 in eight (34 scored, 45 allowed). The Saturday game was still in progress. DraftKings' close is Mariners -186, Mariners -1.5 +123, and a total of 7 with the under at +101. Novig pays +130 on that same -1.5.
 
 ### Rangers at Twins, 12:10 p.m. PT
 
@@ -108,4 +108,4 @@ Ritchie (1-4, 4.79, 67.2 IP) against Junk (6-9, 4.31, 119.0 IP). loanDepot park 
 
 ### Cardinals at Brewers, 12:10 p.m. PT
 
-Pallante (12-8, 3.61, 157.0 IP) against Misiorowski (15-5, 1.86, 169.1 IP, 247 strikeouts, WHIP 0.80). American Family Field is retractable. The outdoor Sunday period is mostly sunny, 68 F, wind 0 to 5 mph. Roof position was not posted. Brewers are 102-59, indicator z, division champ, +212, 826 runs scored and 614 allowed, 7-2 in nine finals (38 scored, 26 allowed). Cardinals are 77-84, 2-6 in eight finals (23 scored, 36 allowed). Sep 26 final: Cardinals 2, Brewers 3. Covers' main total is 6.5, and the first book column favors the over (11/14, which is -127). The Brewers moneyline is -223 on both venues. The -1.5 is +108 on both venues.
+Pallante (12-8, 3.61, 157.0 IP) against Misiorowski (15-5, 1.86, 169.1 IP, 247 strikeouts, WHIP 0.80). American Family Field is retractable. The outdoor Sunday period is mostly sunny, 68 F, wind 0 to 5 mph. Roof position was not posted. Brewers are 102-59, indicator z, division champ, +212, 826 runs scored and 614 allowed, 7-2 in nine finals (38 scored, 26 allowed). Cardinals are 77-84, 2-6 in eight finals (23 scored, 36 allowed). Sep 26 final: Cardinals 2, Brewers 3. DraftKings' close is Brewers -250, Brewers -1.5 +101, and a total of 7 with the under at -120. Novig and Polymarket pay +108 on that same -1.5. Their moneyline is -223, a different price from DraftKings -250.

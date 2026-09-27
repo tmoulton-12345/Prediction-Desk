@@ -1,0 +1,498 @@
+{
+  "stamped_pt": "2026-09-26T19:18:00-07:00",
+  "source": "https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=20260927",
+  "provider": "DraftKings",
+  "note": "Live check of the desk 7:05 p.m. PT ESPN/DK widget. Core odds attachment contained parser errors only. Whole-number totals can push.",
+  "desk_widget_diffs": [
+    {
+      "game": "TB @ PHI",
+      "widget": "TB +109 / PHI -132, PHI -1.5 +163",
+      "live": "TB +113 / PHI -137, PHI -1.5 +167"
+    },
+    {
+      "game": "COL @ CHW",
+      "widget": "CHW -1.5 -102, COL +1.5 -118",
+      "live": "CHW -1.5 -105, COL +1.5 -115"
+    }
+  ],
+  "games": [
+    {
+      "id": "401817103",
+      "name": "BAL @ NYY",
+      "date": "2026-09-27T17:05Z",
+      "venue": "Yankee Stadium",
+      "city": "Bronx",
+      "neutral": false,
+      "notes": [],
+      "away": "BAL",
+      "home": "NYY",
+      "away_sp": "Shane Baz",
+      "home_sp": "Elmer Rodriguez",
+      "odds": {
+        "provider": "DraftKings",
+        "details": "NYY -137",
+        "ou": 8.0,
+        "spread": -1.5,
+        "ml_away": {
+          "line": null,
+          "odds": "+114"
+        },
+        "ml_home": {
+          "line": null,
+          "odds": "-137"
+        },
+        "rl_away": {
+          "line": "+1.5",
+          "odds": "-193"
+        },
+        "rl_home": {
+          "line": "-1.5",
+          "odds": "+158"
+        },
+        "over": {
+          "line": "o8",
+          "odds": "-112"
+        },
+        "under": {
+          "line": "u8",
+          "odds": "-108"
+        }
+      }
+    },
+    {
+      "id": "401817106",
+      "name": "NYM @ WSH",
+      "date": "2026-09-27T17:05Z",
+      "venue": "Nationals Park",
+      "city": "Washington",
+      "neutral": false,
+      "notes": [],
+      "away": "NYM",
+      "home": "WSH",
+      "away_sp": "Sean Manaea",
+      "home_sp": "DJ Herz",
+      "odds": {
+        "provider": "DraftKings",
+        "details": "WSH -110",
+        "ou": 8.5,
+        "spread": 0.0,
+        "ml_away": {
+          "line": null,
+          "odds": "-110"
+        },
+        "ml_home": {
+          "line": null,
+          "odds": "-110"
+        },
+        "rl_away": {
+          "line": "OFF",
+          "odds": "OFF"
+        },
+        "rl_home": {
+          "line": "OFF",
+          "odds": "OFF"
+        },
+        "over": {
+          "line": "o8.5",
+          "odds": "+100"
+        },
+        "under": {
+          "line": "u8.5",
+          "odds": "-120"
+        }
+      }
+    },
+    {
+      "id": "401817089",
+      "name": "CHC VS BOS",
+      "date": "2026-09-27T19:05Z",
+      "venue": "Tropicana Field",
+      "city": "St. Petersburg",
+      "neutral": true,
+      "notes": [
+        "Rescheduled from 9/26"
+      ],
+      "away": "CHC",
+      "home": "BOS",
+      "away_sp": "TBD",
+      "home_sp": "TBD",
+      "odds": null
+    },
+    {
+      "id": "401817108",
+      "name": "TB @ PHI",
+      "date": "2026-09-27T19:05Z",
+      "venue": "Citizens Bank Park",
+      "city": "Philadelphia",
+      "neutral": false,
+      "notes": [],
+      "away": "TB",
+      "home": "PHI",
+      "away_sp": "Nick Martinez",
+      "home_sp": "Zack Wheeler",
+      "odds": {
+        "provider": "DraftKings",
+        "details": "PHI -137",
+        "ou": 7.0,
+        "spread": -1.5,
+        "ml_away": {
+          "line": null,
+          "odds": "+113"
+        },
+        "ml_home": {
+          "line": null,
+          "odds": "-137"
+        },
+        "rl_away": {
+          "line": "+1.5",
+          "odds": "-204"
+        },
+        "rl_home": {
+          "line": "-1.5",
+          "odds": "+167"
+        },
+        "over": {
+          "line": "o7",
+          "odds": "-117"
+        },
+        "under": {
+          "line": "u7",
+          "odds": "-103"
+        }
+      }
+    },
+    {
+      "id": "401817115",
+      "name": "HOU @ ATH",
+      "date": "2026-09-27T19:05Z",
+      "venue": "Sutter Health Park",
+      "city": "Sacramento",
+      "neutral": false,
+      "notes": [],
+      "away": "HOU",
+      "home": "ATH",
+      "away_sp": "TBD",
+      "home_sp": "Brady Basso",
+      "odds": null
+    },
+    {
+      "id": "401817116",
+      "name": "LAD @ SF",
+      "date": "2026-09-27T19:05Z",
+      "venue": "Oracle Park",
+      "city": "San Francisco",
+      "neutral": false,
+      "notes": [],
+      "away": "LAD",
+      "home": "SF",
+      "away_sp": "TBD",
+      "home_sp": "TBD",
+      "odds": null
+    },
+    {
+      "id": "401817105",
+      "name": "CIN @ TOR",
+      "date": "2026-09-27T19:07Z",
+      "venue": "Rogers Centre",
+      "city": "Toronto",
+      "neutral": false,
+      "notes": [],
+      "away": "CIN",
+      "home": "TOR",
+      "away_sp": "Brandon Williamson",
+      "home_sp": "Max Scherzer",
+      "odds": {
+        "provider": "DraftKings",
+        "details": "TOR -172",
+        "ou": 8.5,
+        "spread": -1.5,
+        "ml_away": {
+          "line": null,
+          "odds": "+142"
+        },
+        "ml_home": {
+          "line": null,
+          "odds": "-172"
+        },
+        "rl_away": {
+          "line": "+1.5",
+          "odds": "-144"
+        },
+        "rl_home": {
+          "line": "-1.5",
+          "odds": "+119"
+        },
+        "over": {
+          "line": "o8.5",
+          "odds": "-120"
+        },
+        "under": {
+          "line": "u8.5",
+          "odds": "+100"
+        }
+      }
+    },
+    {
+      "id": "401817102",
+      "name": "ATL @ MIA",
+      "date": "2026-09-27T19:10Z",
+      "venue": "loanDepot park",
+      "city": "Miami",
+      "neutral": false,
+      "notes": [],
+      "away": "ATL",
+      "home": "MIA",
+      "away_sp": "JR Ritchie",
+      "home_sp": "Janson Junk",
+      "odds": {
+        "provider": "DraftKings",
+        "details": "ATL -112",
+        "ou": 8.5,
+        "spread": 1.5,
+        "ml_away": {
+          "line": null,
+          "odds": "-112"
+        },
+        "ml_home": {
+          "line": null,
+          "odds": "-108"
+        },
+        "rl_away": {
+          "line": "-1.5",
+          "odds": "+145"
+        },
+        "rl_home": {
+          "line": "+1.5",
+          "odds": "-176"
+        },
+        "over": {
+          "line": "o8.5",
+          "odds": "-122"
+        },
+        "under": {
+          "line": "u8.5",
+          "odds": "+101"
+        }
+      }
+    },
+    {
+      "id": "401817107",
+      "name": "PIT @ DET",
+      "date": "2026-09-27T19:10Z",
+      "venue": "Comerica Park",
+      "city": "Detroit",
+      "neutral": false,
+      "notes": [],
+      "away": "PIT",
+      "home": "DET",
+      "away_sp": "Jared Jones",
+      "home_sp": "River Ryan",
+      "odds": {
+        "provider": "DraftKings",
+        "details": "PIT -131",
+        "ou": 8.0,
+        "spread": 1.5,
+        "ml_away": {
+          "line": null,
+          "odds": "-131"
+        },
+        "ml_home": {
+          "line": null,
+          "odds": "+109"
+        },
+        "rl_away": {
+          "line": "-1.5",
+          "odds": "+129"
+        },
+        "rl_home": {
+          "line": "+1.5",
+          "odds": "-156"
+        },
+        "over": {
+          "line": "o8",
+          "odds": "-112"
+        },
+        "under": {
+          "line": "u8",
+          "odds": "-108"
+        }
+      }
+    },
+    {
+      "id": "401817109",
+      "name": "CLE @ KC",
+      "date": "2026-09-27T19:10Z",
+      "venue": "Kauffman Stadium",
+      "city": "Kansas City",
+      "neutral": false,
+      "notes": [],
+      "away": "CLE",
+      "home": "KC",
+      "away_sp": "TBD",
+      "home_sp": "Daniel Lynch IV",
+      "odds": null
+    },
+    {
+      "id": "401817110",
+      "name": "COL @ CHW",
+      "date": "2026-09-27T19:10Z",
+      "venue": "Rate Field",
+      "city": "Chicago",
+      "neutral": false,
+      "notes": [],
+      "away": "COL",
+      "home": "CHW",
+      "away_sp": "Kyle Freeland",
+      "home_sp": "Anthony Kay",
+      "odds": {
+        "provider": "DraftKings",
+        "details": "CHW -225",
+        "ou": 8.5,
+        "spread": -1.5,
+        "ml_away": {
+          "line": null,
+          "odds": "+183"
+        },
+        "ml_home": {
+          "line": null,
+          "odds": "-225"
+        },
+        "rl_away": {
+          "line": "+1.5",
+          "odds": "-115"
+        },
+        "rl_home": {
+          "line": "-1.5",
+          "odds": "-105"
+        },
+        "over": {
+          "line": "o8.5",
+          "odds": "-105"
+        },
+        "under": {
+          "line": "u8.5",
+          "odds": "-115"
+        }
+      }
+    },
+    {
+      "id": "401817111",
+      "name": "STL @ MIL",
+      "date": "2026-09-27T19:10Z",
+      "venue": "American Family Field",
+      "city": "Milwaukee",
+      "neutral": false,
+      "notes": [],
+      "away": "STL",
+      "home": "MIL",
+      "away_sp": "Andre Pallante",
+      "home_sp": "Jacob Misiorowski",
+      "odds": {
+        "provider": "DraftKings",
+        "details": "MIL -250",
+        "ou": 7.0,
+        "spread": -1.5,
+        "ml_away": {
+          "line": null,
+          "odds": "+202"
+        },
+        "ml_home": {
+          "line": null,
+          "odds": "-250"
+        },
+        "rl_away": {
+          "line": "+1.5",
+          "odds": "-122"
+        },
+        "rl_home": {
+          "line": "-1.5",
+          "odds": "+101"
+        },
+        "over": {
+          "line": "o7",
+          "odds": "+100"
+        },
+        "under": {
+          "line": "u7",
+          "odds": "-120"
+        }
+      }
+    },
+    {
+      "id": "401817112",
+      "name": "TEX @ MIN",
+      "date": "2026-09-27T19:10Z",
+      "venue": "Target Field",
+      "city": "Minneapolis",
+      "neutral": false,
+      "notes": [],
+      "away": "TEX",
+      "home": "MIN",
+      "away_sp": "TBD",
+      "home_sp": "Dean Kremer",
+      "odds": null
+    },
+    {
+      "id": "401817113",
+      "name": "LAA @ SEA",
+      "date": "2026-09-27T19:10Z",
+      "venue": "T-Mobile Park",
+      "city": "Seattle",
+      "neutral": false,
+      "notes": [],
+      "away": "LAA",
+      "home": "SEA",
+      "away_sp": "Yusei Kikuchi",
+      "home_sp": "Logan Gilbert",
+      "odds": {
+        "provider": "DraftKings",
+        "details": "SEA -186",
+        "ou": 7.0,
+        "spread": -1.5,
+        "ml_away": {
+          "line": null,
+          "odds": "+153"
+        },
+        "ml_home": {
+          "line": null,
+          "odds": "-186"
+        },
+        "rl_away": {
+          "line": "+1.5",
+          "odds": "-149"
+        },
+        "rl_home": {
+          "line": "-1.5",
+          "odds": "+123"
+        },
+        "over": {
+          "line": "o7",
+          "odds": "-122"
+        },
+        "under": {
+          "line": "u7",
+          "odds": "+101"
+        }
+      }
+    },
+    {
+      "id": "401817114",
+      "name": "ARI @ SD",
+      "date": "2026-09-27T19:10Z",
+      "venue": "Petco Park",
+      "city": "San Diego",
+      "neutral": false,
+      "notes": [],
+      "away": "ARI",
+      "home": "SD",
+      "away_sp": "Michael Soroka",
+      "home_sp": "TBD",
+      "odds": null
+    }
+  ],
+  "counts": {
+    "games": 15,
+    "with_dk_odds": 9,
+    "without_dk_odds": 6
+  }
+}
