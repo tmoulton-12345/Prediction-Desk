@@ -11,7 +11,24 @@ from decimal import Decimal, ROUND_HALF_EVEN
 
 ONE = Decimal("1")
 CENT = Decimal("0.01")
+
+# Re-check these on the day of a card. Figures below are the 2026-09-29 read
+# recorded in research/20260929-betting-improvement-methods.md.
+#
+# Polymarket US standard taker theta, exchange-wide from 2026-09-25 00:00 ET.
+# https://docs.polymarket.us/fees
+# Fee = theta * contracts * price * (1 - price), then banker's rounding to the cent.
+# International docs.polymarket.com listed a sports rate of 0.05 that day.
+# That page is a different product. Do not substitute it here.
 PM_TAKER_THETA_DEFAULT = Decimal("0.0695")
+
+# Novig Help Center, article 16195057, read 2026-09-29.
+# https://support.novig.com/en/articles/16195057-fees-on-novig
+# Pregame straights use charge mode WHEN_LIVE and are 0 while the event
+# status is OPEN_PREGAME. Live straights use 0.03. Futures use 0.06.
+# Parlay coefficient 0.10 is inside the quote; this paper log does not size parlays.
+NOVIG_STRAIGHT_LIVE_COEFF = Decimal("0.03")
+NOVIG_FUTURES_COEFF = Decimal("0.06")
 
 
 def q(value: Decimal | str | int) -> Decimal:

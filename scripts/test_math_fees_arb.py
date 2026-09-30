@@ -6,6 +6,9 @@ import unittest
 from decimal import Decimal
 
 from math_fees_arb import (
+    NOVIG_FUTURES_COEFF,
+    NOVIG_STRAIGHT_LIVE_COEFF,
+    PM_TAKER_THETA_DEFAULT,
     bankers_cents,
     edge_pct_of_payout,
     locked_edge,
@@ -93,6 +96,15 @@ class FeeTests(unittest.TestCase):
             novig_taker_fee_per_dollar(
                 Decimal("0.50"), Decimal("0.03"), "SOMETIMES", "OPEN_PREGAME"
             )
+
+
+class CoefficientTests(unittest.TestCase):
+    def test_named_coefficients_match_the_20260929_read(self):
+        # Polymarket US standard taker theta. Novig live straight and futures.
+        # Sources are the comments on the constants in math_fees_arb.py.
+        self.assertEqual(PM_TAKER_THETA_DEFAULT, Decimal("0.0695"))
+        self.assertEqual(NOVIG_STRAIGHT_LIVE_COEFF, Decimal("0.03"))
+        self.assertEqual(NOVIG_FUTURES_COEFF, Decimal("0.06"))
 
 
 class ArbTests(unittest.TestCase):
