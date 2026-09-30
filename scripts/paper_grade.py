@@ -1,8 +1,9 @@
-"""Grade a paper spread or total from a final score.
+"""Grade a paper spread, total, or moneyline from a final score.
 
-American -110 on a flat stake. No order placement.
-Spreads and totals use the final score, including overtime when the
-source total includes it. A game that is not final is not graded.
+American -110 on a flat stake unless the caller passes another price.
+No order placement. Spreads, totals, and moneylines use the final score,
+including overtime when the source total includes it. A game that is not
+final is not graded.
 """
 
 from __future__ import annotations
@@ -91,6 +92,13 @@ def grade_total(away_score: int, home_score: int, side: str, line: Decimal | str
         "result": result,
         "hit": _hit(result),
     }
+
+
+def grade_moneyline(pick_score: int, opp_score: int) -> dict:
+    """Moneyline margin = pick score − opponent score. A tie is a push."""
+    margin = Decimal(pick_score) - Decimal(opp_score)
+    result = _result_from_margin(margin)
+    return {"margin": margin, "result": result, "hit": _hit(result)}
 
 
 def _hit(result: str) -> str:

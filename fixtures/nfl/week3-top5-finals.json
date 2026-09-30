@@ -1,0 +1,50 @@
+{
+  "pulled": "2026-09-30",
+  "note": "Frozen from the ESPN public NFL scoreboard on 2026-09-30 (site.web.api.espn.com). Each game was STATUS_FINAL with four quarter linescores and no overtime period. Ticket abbreviation WAS is Washington; ESPN's short name for that club is WSH. The logger does not fetch the network. Refresh this file from a public scoreboard read when scoring a later week.",
+  "games": [
+    {
+      "event": "SEA @ WAS",
+      "away": "SEA",
+      "home": "WAS",
+      "away_score": 31,
+      "home_score": 33,
+      "status": "STATUS_FINAL",
+      "overtime": false,
+      "espn_game_id": "401872955",
+      "source": "https://www.espn.com/nfl/boxscore/_/gameId/401872955"
+    },
+    {
+      "event": "TEN @ NYG",
+      "away": "TEN",
+      "home": "NYG",
+      "away_score": 7,
+      "home_score": 12,
+      "status": "STATUS_FINAL",
+      "overtime": false,
+      "espn_game_id": "401872956",
+      "source": "https://www.espn.com/nfl/boxscore/_/gameId/401872956"
+    },
+    {
+      "event": "PHI @ CHI",
+      "away": "PHI",
+      "home": "CHI",
+      "away_score": 7,
+      "home_score": 27,
+      "status": "STATUS_FINAL",
+      "overtime": false,
+      "espn_game_id": "401872963",
+      "source": "https://www.espn.com/nfl/boxscore/_/gameId/401872963"
+    },
+    {
+      "event": "LAC @ BUF",
+      "away": "LAC",
+      "home": "BUF",
+      "away_score": 16,
+      "home_score": 24,
+      "status": "STATUS_FINAL",
+      "overtime": false,
+      "espn_game_id": "401872953",
+      "source": "https://www.espn.com/nfl/boxscore/_/gameId/401872953"
+    }
+  ]
+}

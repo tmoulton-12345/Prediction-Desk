@@ -7,6 +7,7 @@ from decimal import Decimal
 
 from paper_grade import (
     american_win_profit,
+    grade_moneyline,
     grade_spread,
     grade_total,
     settle,
@@ -66,6 +67,17 @@ class GradeTests(unittest.TestCase):
         over = grade_total(30, 27, "Over", "58.5")
         self.assertEqual(over["margin"], Decimal("-1.5"))
         self.assertEqual(over["result"], "L")
+
+    def test_moneyline_win_loss_and_tie(self):
+        win = grade_moneyline(24, 17)
+        self.assertEqual(win["result"], "W")
+        self.assertEqual(win["hit"], "hit")
+        loss = grade_moneyline(7, 27)
+        self.assertEqual(loss["result"], "L")
+        tie = grade_moneyline(20, 20)
+        self.assertEqual(tie["margin"], Decimal("0"))
+        self.assertEqual(tie["result"], "P")
+        self.assertEqual(tie["hit"], "push")
 
     def test_settled_cfb_book(self):
         # Two wins and two losses at $20 / -110. The open ticket is excluded.

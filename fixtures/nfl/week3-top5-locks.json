@@ -1,0 +1,77 @@
+{
+  "schema_version": "nfl-paper-log-v1",
+  "slate": "NFL Week 3 paper top-5",
+  "sport": "NFL",
+  "week": 3,
+  "decision_time": "2026-09-25T21:46:00-07:00",
+  "decision_time_note": "Decision time is the stamp of research/nfl-weekend-2026-09-27_28-pack-2026-09-25-2146-PT.md, not a per-ticket click.",
+  "venue": "paper_ledger",
+  "stake": "20",
+  "american_odds": -110,
+  "devig_method": "basic",
+  "decision": "paper_lock",
+  "event_status": "OPEN_PREGAME",
+  "reason": "Week 3 paper top-5 lock from the desk ledger. Flat $20 at -110. No live order.",
+  "locks": [
+    {
+      "ticket_id": "PAPER-NFL-01",
+      "event": "SEA @ WAS",
+      "away": "SEA",
+      "home": "WAS",
+      "kick_time_pt": "2026-09-27T10:00:00-07:00",
+      "market_type": "spread",
+      "side": "SEA",
+      "line": "-7.5",
+      "period": "FG",
+      "sources": "research/20260926-1626-pt-cfb-nfl-paper-scorecard.md;https://www.espn.com/nfl/boxscore/_/gameId/401872955"
+    },
+    {
+      "ticket_id": "PAPER-NFL-02",
+      "event": "TEN @ NYG",
+      "away": "TEN",
+      "home": "NYG",
+      "kick_time_pt": "2026-09-27T10:00:00-07:00",
+      "market_type": "total",
+      "side": "Under",
+      "line": "37.5",
+      "period": "FG",
+      "sources": "research/20260926-1626-pt-cfb-nfl-paper-scorecard.md;https://www.espn.com/nfl/boxscore/_/gameId/401872956"
+    },
+    {
+      "ticket_id": "PAPER-NFL-03",
+      "event": "PHI @ CHI",
+      "away": "PHI",
+      "home": "CHI",
+      "kick_time_pt": "2026-09-28T17:15:00-07:00",
+      "market_type": "spread",
+      "side": "PHI",
+      "line": "-3.5",
+      "period": "FG",
+      "sources": "research/20260926-1626-pt-cfb-nfl-paper-scorecard.md;https://www.espn.com/nfl/boxscore/_/gameId/401872963"
+    },
+    {
+      "ticket_id": "PAPER-NFL-04",
+      "event": "SEA @ WAS",
+      "away": "SEA",
+      "home": "WAS",
+      "kick_time_pt": "2026-09-27T10:00:00-07:00",
+      "market_type": "total",
+      "side": "Under",
+      "line": "39.5",
+      "period": "FG",
+      "sources": "research/20260926-1626-pt-cfb-nfl-paper-scorecard.md;https://www.espn.com/nfl/boxscore/_/gameId/401872955"
+    },
+    {
+      "ticket_id": "PAPER-NFL-05",
+      "event": "LAC @ BUF",
+      "away": "LAC",
+      "home": "BUF",
+      "kick_time_pt": "2026-09-27T10:00:00-07:00",
+      "market_type": "spread",
+      "side": "BUF",
+      "line": "-7.5",
+      "period": "FG",
+      "sources": "research/20260926-1626-pt-cfb-nfl-paper-scorecard.md;https://www.espn.com/nfl/boxscore/_/gameId/401872953"
+    }
+  ]
+}
