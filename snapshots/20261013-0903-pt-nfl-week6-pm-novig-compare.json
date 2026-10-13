@@ -1,0 +1,1978 @@
+{
+  "pulled_at": "2026-10-13T09:03:19-07:00",
+  "kickoffs_verified": true,
+  "kickoff_deltas": [],
+  "books_snapshot": "/workspace/week6-books/20261013-0900-pt-nfl-week6-books.json",
+  "compare_path": "/workspace/week6-books/20261013-0903-PT-week6-pm-novig-compare.json",
+  "fee_assumptions": {
+    "polymarket_us_taker_theta": 0.0695,
+    "polymarket_us_near50_cents": 1.7375,
+    "novig_pregame_straight": 0,
+    "novig_live_coeff": 0.03,
+    "novig_charged": "WHEN_LIVE"
+  },
+  "comparison": [
+    {
+      "game": "SEA@DEN",
+      "date": "2026-10-15",
+      "kick_pt": "5:15pm PT",
+      "window": "TNF",
+      "pm_event_slug": "nfl-sea-den-2026-10-15",
+      "pm_spread": {
+        "slug": "asc-nfl-sea-den-2026-10-15-neg-2pt5",
+        "question": "Will the Seattle Seahawks cover -2.5 vs the Denver Broncos in SEA Seahawks vs. DEN Broncos?",
+        "line": -2.5,
+        "yes_side": "SEA -2.5",
+        "bid": 0.535,
+        "ask": 0.54,
+        "mid": 0.5375000000000001,
+        "amer_yes": -116,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": 2.5,
+        "marketId": "01a112eb-4ee7-7453-ac0d-23bf52594b97",
+        "description": "DEN +2.5",
+        "away": {
+          "name": "SEA -2.5",
+          "bid": 0.535,
+          "ask": 0.54,
+          "mid": 0.5375000000000001,
+          "bid_sz": 162076
+        },
+        "home": {
+          "name": "DEN +2.5",
+          "bid": 0.46,
+          "ask": 0.46499999999999997,
+          "mid": 0.4625,
+          "bid_sz": 1954538
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-sea-den-2026-10-15-total-40pt5",
+        "question": "Will the total in SEA Seahawks vs. DEN Broncos be more than 40.5?",
+        "line": 40.5,
+        "yes_side": "Over 40.5",
+        "bid": 0.5,
+        "ask": 0.505,
+        "mid": 0.5025,
+        "amer_yes": -101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 40.5,
+        "marketId": "01a112eb-4ee7-7453-ac0d-253c017fc74d",
+        "description": "SEA @ DEN t40.5",
+        "over": {
+          "name": "Over 40.5",
+          "bid": 0.5,
+          "ask": 0.505,
+          "mid": 0.5025,
+          "bid_sz": 1289
+        },
+        "under": {
+          "name": "Under 40.5",
+          "bid": 0.495,
+          "ask": 0.5,
+          "mid": 0.4975,
+          "bid_sz": 40199
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "HOU@JAX",
+      "date": "2026-10-18",
+      "kick_pt": "6:30am PT",
+      "window": "London",
+      "pm_event_slug": "nfl-hou-jax-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-hou-jax-2026-10-18-pos-2pt5",
+        "question": "Will the Houston Texans cover 2.5 vs the Jacksonville Jaguars in HOU Texans vs. JAC Jaguars?",
+        "line": 2.5,
+        "yes_side": "HOU +2.5",
+        "bid": 0.47,
+        "ask": 0.475,
+        "mid": 0.4725,
+        "amer_yes": 112,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": -2.5,
+        "marketId": "01a112eb-4f60-7ae2-a422-0f567c62477c",
+        "description": "JAX -2.5",
+        "away": {
+          "name": "HOU +2.5",
+          "bid": 0.475,
+          "ask": 0.485,
+          "mid": 0.48,
+          "bid_sz": 351
+        },
+        "home": {
+          "name": "JAX -2.5",
+          "bid": 0.515,
+          "ask": 0.525,
+          "mid": 0.52,
+          "bid_sz": 16936
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-hou-jax-2026-10-18-total-42pt5",
+        "question": "Will the total in HOU Texans vs. JAC Jaguars be more than 42.5?",
+        "line": 42.5,
+        "yes_side": "Over 42.5",
+        "bid": 0.5,
+        "ask": 0.505,
+        "mid": 0.5025,
+        "amer_yes": -101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 42.5,
+        "marketId": "01a112eb-4f60-7ae2-a422-0f20ec944c13",
+        "description": "HOU @ JAX t42.5",
+        "over": {
+          "name": "Over 42.5",
+          "bid": 0.495,
+          "ask": 0.51,
+          "mid": 0.5025,
+          "bid_sz": 220
+        },
+        "under": {
+          "name": "Under 42.5",
+          "bid": 0.49,
+          "ask": 0.505,
+          "mid": 0.4975,
+          "bid_sz": 2363
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "CHI@ATL",
+      "date": "2026-10-18",
+      "kick_pt": "10:00am PT",
+      "window": "Sun1",
+      "pm_event_slug": "nfl-chi-atl-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-chi-atl-2026-10-18-neg-3pt5",
+        "question": "Will the Chicago Bears cover -3.5 vs the Atlanta Falcons in CHI Bears vs. ATL Falcons?",
+        "line": -3.5,
+        "yes_side": "CHI -3.5",
+        "bid": 0.465,
+        "ask": 0.47,
+        "mid": 0.4675,
+        "amer_yes": 114,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": 3.5,
+        "marketId": "01a112eb-50eb-7733-ae82-7f4effef4169",
+        "description": "ATL +3.5",
+        "away": {
+          "name": "CHI -3.5",
+          "bid": 0.46,
+          "ask": 0.46499999999999997,
+          "mid": 0.4625,
+          "bid_sz": 3154
+        },
+        "home": {
+          "name": "ATL +3.5",
+          "bid": 0.535,
+          "ask": 0.54,
+          "mid": 0.5375000000000001,
+          "bid_sz": 279570
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-chi-atl-2026-10-18-total-49pt5",
+        "question": "Will the total in CHI Bears vs. ATL Falcons be more than 49.5?",
+        "line": 49.5,
+        "yes_side": "Over 49.5",
+        "bid": 0.495,
+        "ask": 0.5,
+        "mid": 0.4975,
+        "amer_yes": 101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 49.5,
+        "marketId": "01a112eb-50eb-7733-ae82-824384220558",
+        "description": "CHI @ ATL t49.5",
+        "over": {
+          "name": "Over 49.5",
+          "bid": 0.48,
+          "ask": 0.5,
+          "mid": 0.49,
+          "bid_sz": 625000
+        },
+        "under": {
+          "name": "Under 49.5",
+          "bid": 0.5,
+          "ask": 0.52,
+          "mid": 0.51,
+          "bid_sz": 100
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "BAL@CLE",
+      "date": "2026-10-18",
+      "kick_pt": "10:00am PT",
+      "window": "Sun1",
+      "pm_event_slug": "nfl-bal-cle-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-bal-cle-2026-10-18-neg-4pt5",
+        "question": "Will the Baltimore Ravens cover -4.5 vs the Cleveland Browns in BAL Ravens vs. CLE Browns?",
+        "line": -4.5,
+        "yes_side": "BAL -4.5",
+        "bid": 0.495,
+        "ask": 0.5,
+        "mid": 0.4975,
+        "amer_yes": 101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": 4.5,
+        "marketId": "01a112eb-522b-7e72-a550-52956624c57c",
+        "description": "CLE +4.5",
+        "away": {
+          "name": "BAL -4.5",
+          "bid": 0.505,
+          "ask": 0.515,
+          "mid": 0.51,
+          "bid_sz": 8272
+        },
+        "home": {
+          "name": "CLE +4.5",
+          "bid": 0.485,
+          "ask": 0.495,
+          "mid": 0.49,
+          "bid_sz": 966
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-bal-cle-2026-10-18-total-41pt5",
+        "question": "Will the total in BAL Ravens vs. CLE Browns be more than 41.5?",
+        "line": 41.5,
+        "yes_side": "Over 41.5",
+        "bid": 0.475,
+        "ask": 0.49,
+        "mid": 0.4825,
+        "amer_yes": 107,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 41.5,
+        "marketId": "01a112eb-522a-7093-8a86-0878721f01d7",
+        "description": "BAL @ CLE t41.5",
+        "over": {
+          "name": "Over 41.5",
+          "bid": 0.46,
+          "ask": 0.48,
+          "mid": 0.47,
+          "bid_sz": 652173
+        },
+        "under": {
+          "name": "Under 41.5",
+          "bid": 0.52,
+          "ask": 0.54,
+          "mid": 0.53,
+          "bid_sz": 21876
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "TEN@IND",
+      "date": "2026-10-18",
+      "kick_pt": "10:00am PT",
+      "window": "Sun1",
+      "pm_event_slug": "nfl-ten-ind-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-ten-ind-2026-10-18-pos-6pt5",
+        "question": "Will the Tennessee Titans cover 6.5 vs the Indianapolis Colts in TEN Titans vs. IND Colts?",
+        "line": 6.5,
+        "yes_side": "TEN +6.5",
+        "bid": 0.465,
+        "ask": 0.47,
+        "mid": 0.4675,
+        "amer_yes": 114,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": -6.5,
+        "marketId": "01a112eb-51cc-7eb2-9215-c9137adfc0aa",
+        "description": "IND -6.5",
+        "away": {
+          "name": "TEN +6.5",
+          "bid": 0.465,
+          "ask": 0.47,
+          "mid": 0.4675,
+          "bid_sz": 5036
+        },
+        "home": {
+          "name": "IND -6.5",
+          "bid": 0.53,
+          "ask": 0.5349999999999999,
+          "mid": 0.5325,
+          "bid_sz": 65966
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-ten-ind-2026-10-18-total-44pt5",
+        "question": "Will the total in TEN Titans vs. IND Colts be more than 44.5?",
+        "line": 44.5,
+        "yes_side": "Over 44.5",
+        "bid": 0.48,
+        "ask": 0.485,
+        "mid": 0.4825,
+        "amer_yes": 107,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 44.5,
+        "marketId": "01a112eb-51cd-7250-b148-40e67c6f8cce",
+        "description": "TEN @ IND t44.5",
+        "over": {
+          "name": "Over 44.5",
+          "bid": 0.47,
+          "ask": 0.49,
+          "mid": 0.48,
+          "bid_sz": 25000
+        },
+        "under": {
+          "name": "Under 44.5",
+          "bid": 0.51,
+          "ask": 0.53,
+          "mid": 0.52,
+          "bid_sz": 5000
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "NYJ@NE",
+      "date": "2026-10-18",
+      "kick_pt": "10:00am PT",
+      "window": "Sun1",
+      "pm_event_slug": "nfl-nyj-ne-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-nyj-ne-2026-10-18-pos-6pt5",
+        "question": "Will the New York Jets cover 6.5 vs the New England Patriots in NY Jets vs. NE Patriots?",
+        "line": 6.5,
+        "yes_side": "NYJ +6.5",
+        "bid": 0.465,
+        "ask": 0.47,
+        "mid": 0.4675,
+        "amer_yes": 114,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": -6.5,
+        "marketId": "01a112eb-500b-7cd2-a1e1-9c5d87ac4be0",
+        "description": "NE -6.5",
+        "away": {
+          "name": "NYJ +6.5",
+          "bid": 0.465,
+          "ask": 0.47,
+          "mid": 0.4675,
+          "bid_sz": 4922
+        },
+        "home": {
+          "name": "NE -6.5",
+          "bid": 0.53,
+          "ask": 0.5349999999999999,
+          "mid": 0.5325,
+          "bid_sz": 20000
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-nyj-ne-2026-10-18-total-43pt5",
+        "question": "Will the total in NY Jets vs. NE Patriots be more than 43.5?",
+        "line": 43.5,
+        "yes_side": "Over 43.5",
+        "bid": 0.51,
+        "ask": 0.52,
+        "mid": 0.515,
+        "amer_yes": -106,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 43.5,
+        "marketId": "01a112eb-500b-7cd2-a1e1-9ce28b3a8c14",
+        "description": "NYJ @ NE t43.5",
+        "over": {
+          "name": "Over 43.5",
+          "bid": 0.5,
+          "ask": 0.52,
+          "mid": 0.51,
+          "bid_sz": 9400
+        },
+        "under": {
+          "name": "Under 43.5",
+          "bid": 0.48,
+          "ask": 0.5,
+          "mid": 0.49,
+          "bid_sz": 14762
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "NO@NYG",
+      "date": "2026-10-18",
+      "kick_pt": "10:00am PT",
+      "window": "Sun1",
+      "pm_event_slug": "nfl-no-nyg-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-no-nyg-2026-10-18-neg-1pt5",
+        "question": "Will the New Orleans Saints cover -1.5 vs the New York Giants in NO Saints vs. NY Giants?",
+        "line": -1.5,
+        "yes_side": "NO -1.5",
+        "bid": 0.47,
+        "ask": 0.475,
+        "mid": 0.4725,
+        "amer_yes": 112,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": 1.5,
+        "marketId": "01a112eb-5065-71b0-b01c-8ef3533cee00",
+        "description": "NYG +1.5",
+        "away": {
+          "name": "NO -1.5",
+          "bid": 0.465,
+          "ask": 0.485,
+          "mid": 0.475,
+          "bid_sz": 5991
+        },
+        "home": {
+          "name": "NYG +1.5",
+          "bid": 0.515,
+          "ask": 0.5349999999999999,
+          "mid": 0.5249999999999999,
+          "bid_sz": 14846
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-no-nyg-2026-10-18-total-45pt5",
+        "question": "Will the total in NO Saints vs. NY Giants be more than 45.5?",
+        "line": 45.5,
+        "yes_side": "Over 45.5",
+        "bid": 0.485,
+        "ask": 0.495,
+        "mid": 0.49,
+        "amer_yes": 104,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 45.5,
+        "marketId": "01a112eb-5065-71b0-b01c-8eca3e83a1c4",
+        "description": "NO @ NYG t45.5",
+        "over": {
+          "name": "Over 45.5",
+          "bid": 0.48,
+          "ask": 0.5,
+          "mid": 0.49,
+          "bid_sz": 617212
+        },
+        "under": {
+          "name": "Under 45.5",
+          "bid": 0.5,
+          "ask": 0.52,
+          "mid": 0.51,
+          "bid_sz": 9600
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "CAR@PHI",
+      "date": "2026-10-18",
+      "kick_pt": "10:00am PT",
+      "window": "Sun1",
+      "pm_event_slug": "nfl-car-phi-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-car-phi-2026-10-18-pos-1pt5",
+        "question": "Will the Carolina Panthers cover 1.5 vs the Philadelphia Eagles in CAR Panthers vs. PHI Eagles?",
+        "line": 1.5,
+        "yes_side": "CAR +1.5",
+        "bid": 0.525,
+        "ask": 0.53,
+        "mid": 0.5275000000000001,
+        "amer_yes": -112,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": -1.5,
+        "marketId": "01a112eb-5167-71d1-8deb-f7d850d3e1c6",
+        "description": "PHI -1.5",
+        "away": {
+          "name": "CAR +1.5",
+          "bid": 0.52,
+          "ask": 0.53,
+          "mid": 0.525,
+          "bid_sz": 896
+        },
+        "home": {
+          "name": "PHI -1.5",
+          "bid": 0.47,
+          "ask": 0.48,
+          "mid": 0.475,
+          "bid_sz": 588299
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-car-phi-2026-10-18-total-41pt5",
+        "question": "Will the total in CAR Panthers vs. PHI Eagles be more than 41.5?",
+        "line": 41.5,
+        "yes_side": "Over 41.5",
+        "bid": 0.5,
+        "ask": 0.51,
+        "mid": 0.505,
+        "amer_yes": -102,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 41.5,
+        "marketId": "01a112eb-5167-71d1-8deb-fa113dc527cf",
+        "description": "CAR @ PHI t41.5",
+        "over": {
+          "name": "Over 41.5",
+          "bid": 0.495,
+          "ask": 0.51,
+          "mid": 0.5025,
+          "bid_sz": 6342
+        },
+        "under": {
+          "name": "Under 41.5",
+          "bid": 0.49,
+          "ask": 0.505,
+          "mid": 0.4975,
+          "bid_sz": 8560
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "PIT@TB",
+      "date": "2026-10-18",
+      "kick_pt": "10:00am PT",
+      "window": "Sun1",
+      "pm_event_slug": "nfl-pit-tb-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-pit-tb-2026-10-18-neg-2pt5",
+        "question": "Will the Pittsburgh Steelers cover -2.5 vs the Tampa Bay Buccaneers in PIT Steelers vs. TB Buccaneers?",
+        "line": -2.5,
+        "yes_side": "PIT -2.5",
+        "bid": 0.5,
+        "ask": 0.505,
+        "mid": 0.5025,
+        "amer_yes": -101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": 2.5,
+        "marketId": "01a112eb-528e-7823-9e61-64ae5f8b66d4",
+        "description": "TB +2.5",
+        "away": {
+          "name": "PIT -2.5",
+          "bid": 0.5,
+          "ask": 0.505,
+          "mid": 0.5025,
+          "bid_sz": 1044
+        },
+        "home": {
+          "name": "TB +2.5",
+          "bid": 0.495,
+          "ask": 0.5,
+          "mid": 0.4975,
+          "bid_sz": 1012
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-pit-tb-2026-10-18-total-40pt5",
+        "question": "Will the total in PIT Steelers vs. TB Buccaneers be more than 40.5?",
+        "line": 40.5,
+        "yes_side": "Over 40.5",
+        "bid": 0.495,
+        "ask": 0.5,
+        "mid": 0.4975,
+        "amer_yes": 101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 40.5,
+        "marketId": "01a112eb-528e-7823-9e61-671aa904a842",
+        "description": "PIT @ TB t40.5",
+        "over": {
+          "name": "Over 40.5",
+          "bid": 0.49,
+          "ask": 0.495,
+          "mid": 0.4925,
+          "bid_sz": 548
+        },
+        "under": {
+          "name": "Under 40.5",
+          "bid": 0.505,
+          "ask": 0.51,
+          "mid": 0.5075000000000001,
+          "bid_sz": 19702
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "ARI@LAR",
+      "date": "2026-10-18",
+      "kick_pt": "1:05pm PT",
+      "window": "Sun4",
+      "pm_event_slug": "nfl-ari-lar-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-ari-lar-2026-10-18-pos-12pt5",
+        "question": "Will the Arizona Cardinals cover 12.5 vs the Los Angeles Rams in ARI Cardinals vs. LA Rams?",
+        "line": 12.5,
+        "yes_side": "ARI +12.5",
+        "bid": 0.495,
+        "ask": 0.5,
+        "mid": 0.4975,
+        "amer_yes": 101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": -12.5,
+        "marketId": "01a112eb-52f3-7ff0-8351-11b59bf554c4",
+        "description": "LAR -12.5",
+        "away": {
+          "name": "ARI +12.5",
+          "bid": 0.485,
+          "ask": 0.5,
+          "mid": 0.4925,
+          "bid_sz": 200000
+        },
+        "home": {
+          "name": "LAR -12.5",
+          "bid": 0.5,
+          "ask": 0.515,
+          "mid": 0.5075000000000001,
+          "bid_sz": 526204
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-ari-lar-2026-10-18-total-52pt5",
+        "question": "Will the total in ARI Cardinals vs. LA Rams be more than 52.5?",
+        "line": 52.5,
+        "yes_side": "Over 52.5",
+        "bid": 0.495,
+        "ask": 0.5,
+        "mid": 0.4975,
+        "amer_yes": 101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 52.5,
+        "marketId": "01a112eb-52f2-79d0-9c09-9a4604fcd8e1",
+        "description": "ARI @ LAR t52.5",
+        "over": {
+          "name": "Over 52.5",
+          "bid": 0.49,
+          "ask": 0.5,
+          "mid": 0.495,
+          "bid_sz": 12700
+        },
+        "under": {
+          "name": "Under 52.5",
+          "bid": 0.5,
+          "ask": 0.51,
+          "mid": 0.505,
+          "bid_sz": 768
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "LAC@KC",
+      "date": "2026-10-18",
+      "kick_pt": "1:25pm PT",
+      "window": "Sun4",
+      "pm_event_slug": "nfl-lac-kc-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-lac-kc-2026-10-18-pos-8pt5",
+        "question": "Will the Los Angeles Chargers cover 8.5 vs the Kansas City Chiefs in LA Chargers vs. KC Chiefs?",
+        "line": 8.5,
+        "yes_side": "LAC +8.5",
+        "bid": 0.505,
+        "ask": 0.51,
+        "mid": 0.5075000000000001,
+        "amer_yes": -103,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": -8.5,
+        "marketId": "01a112eb-5370-71b2-bd7c-5401d86d77a7",
+        "description": "KC -8.5",
+        "away": {
+          "name": "LAC +8.5",
+          "bid": 0.51,
+          "ask": 0.515,
+          "mid": 0.5125,
+          "bid_sz": 7435
+        },
+        "home": {
+          "name": "KC -8.5",
+          "bid": 0.485,
+          "ask": 0.49,
+          "mid": 0.4875,
+          "bid_sz": 721
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-lac-kc-2026-10-18-total-42pt5",
+        "question": "Will the total in LA Chargers vs. KC Chiefs be more than 42.5?",
+        "line": 42.5,
+        "yes_side": "Over 42.5",
+        "bid": 0.485,
+        "ask": 0.49,
+        "mid": 0.4875,
+        "amer_yes": 105,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 42.5,
+        "marketId": "01a112eb-536f-7d91-a84e-9a614b55b1ab",
+        "description": "LAC @ KC t42.5",
+        "over": {
+          "name": "Over 42.5",
+          "bid": 0.485,
+          "ask": 0.49,
+          "mid": 0.4875,
+          "bid_sz": 93870
+        },
+        "under": {
+          "name": "Under 42.5",
+          "bid": 0.51,
+          "ask": 0.515,
+          "mid": 0.5125,
+          "bid_sz": 3501
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "BUF@LV",
+      "date": "2026-10-18",
+      "kick_pt": "1:25pm PT",
+      "window": "Sun4",
+      "pm_event_slug": "nfl-buf-lv-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-buf-lv-2026-10-18-neg-5pt5",
+        "question": "Will the Buffalo Bills cover -5.5 vs the Las Vegas Raiders in BUF Bills vs. LV Raiders?",
+        "line": -5.5,
+        "yes_side": "BUF -5.5",
+        "bid": 0.5,
+        "ask": 0.505,
+        "mid": 0.5025,
+        "amer_yes": -101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": 5.5,
+        "marketId": "01a112eb-53d7-7d40-a6da-718b6141d17f",
+        "description": "LV +5.5",
+        "away": {
+          "name": "BUF -5.5",
+          "bid": 0.495,
+          "ask": 0.5,
+          "mid": 0.4975,
+          "bid_sz": 100000
+        },
+        "home": {
+          "name": "LV +5.5",
+          "bid": 0.5,
+          "ask": 0.505,
+          "mid": 0.5025,
+          "bid_sz": 219154
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-buf-lv-2026-10-18-total-53pt5",
+        "question": "Will the total in BUF Bills vs. LV Raiders be more than 53.5?",
+        "line": 53.5,
+        "yes_side": "Over 53.5",
+        "bid": 0.495,
+        "ask": 0.5,
+        "mid": 0.4975,
+        "amer_yes": 101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 53.5,
+        "marketId": "01a112eb-53d8-78d0-8d05-487c5f16e586",
+        "description": "BUF @ LV t53.5",
+        "over": {
+          "name": "Over 53.5",
+          "bid": 0.495,
+          "ask": 0.51,
+          "mid": 0.5025,
+          "bid_sz": 994
+        },
+        "under": {
+          "name": "Under 53.5",
+          "bid": 0.49,
+          "ask": 0.505,
+          "mid": 0.4975,
+          "bid_sz": 10000
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "DAL@GB",
+      "date": "2026-10-18",
+      "kick_pt": "5:20pm PT",
+      "window": "SNF",
+      "pm_event_slug": "nfl-dal-gb-2026-10-18",
+      "pm_spread": {
+        "slug": "asc-nfl-dal-gb-2026-10-18-pos-1pt5",
+        "question": "Will the Dallas Cowboys cover 1.5 vs the Green Bay Packers in DAL Cowboys vs. GB Packers?",
+        "line": 1.5,
+        "yes_side": "DAL +1.5",
+        "bid": 0.51,
+        "ask": 0.515,
+        "mid": 0.5125,
+        "amer_yes": -105,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": -1.5,
+        "marketId": "01a112eb-5435-7d80-aba2-7f7819670e12",
+        "description": "GB -1.5",
+        "away": {
+          "name": "DAL +1.5",
+          "bid": 0.51,
+          "ask": 0.515,
+          "mid": 0.5125,
+          "bid_sz": 324
+        },
+        "home": {
+          "name": "GB -1.5",
+          "bid": 0.485,
+          "ask": 0.49,
+          "mid": 0.4875,
+          "bid_sz": 5154
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-dal-gb-2026-10-18-total-53pt5",
+        "question": "Will the total in DAL Cowboys vs. GB Packers be more than 53.5?",
+        "line": 53.5,
+        "yes_side": "Over 53.5",
+        "bid": 0.49,
+        "ask": 0.5,
+        "mid": 0.495,
+        "amer_yes": 102,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 53.5,
+        "marketId": "01a112eb-5435-7d80-aba2-7d94dd79c649",
+        "description": "DAL @ GB t53.5",
+        "over": {
+          "name": "Over 53.5",
+          "bid": 0.48,
+          "ask": 0.485,
+          "mid": 0.4825,
+          "bid_sz": 7129
+        },
+        "under": {
+          "name": "Under 53.5",
+          "bid": 0.515,
+          "ask": 0.52,
+          "mid": 0.5175000000000001,
+          "bid_sz": 35334
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    },
+    {
+      "game": "WAS@SF",
+      "date": "2026-10-19",
+      "kick_pt": "5:15pm PT",
+      "window": "MNF",
+      "pm_event_slug": "nfl-was-sf-2026-10-19",
+      "pm_spread": {
+        "slug": "asc-nfl-was-sf-2026-10-19-pos-7pt5",
+        "question": "Will the Washington Commanders cover 7.5 vs the San Francisco 49ers in WAS Commanders vs. SF 49ers?",
+        "line": 7.5,
+        "yes_side": "WAS +7.5",
+        "bid": 0.495,
+        "ask": 0.5,
+        "mid": 0.4975,
+        "amer_yes": 101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_spread": {
+        "strike": -7.5,
+        "marketId": "01a112eb-54e7-7963-8beb-33e05a7952b4",
+        "description": "SF -7.5",
+        "away": {
+          "name": "WSH +7.5",
+          "bid": 0.5,
+          "ask": 0.51,
+          "mid": 0.505,
+          "bid_sz": 1041
+        },
+        "home": {
+          "name": "SF -7.5",
+          "bid": 0.49,
+          "ask": 0.5,
+          "mid": 0.495,
+          "bid_sz": 25525
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      },
+      "pm_total": {
+        "slug": "tsc-nfl-was-sf-2026-10-19-total-50pt5",
+        "question": "Will the total in WAS Commanders vs. SF 49ers be more than 50.5?",
+        "line": 50.5,
+        "yes_side": "Over 50.5",
+        "bid": 0.5,
+        "ask": 0.505,
+        "mid": 0.5025,
+        "amer_yes": -101,
+        "fee_assumption": "PM US taker Fee=\u0398\u00d7C\u00d7p\u00d7(1\u2212p) \u0398=0.0695 (~1.74\u00a2/contract near 50\u00a2)"
+      },
+      "nv_total": {
+        "strike": 50.5,
+        "marketId": "01a112eb-54e8-7823-917a-d2d076c8886c",
+        "description": "WSH @ SF t50.5",
+        "over": {
+          "name": "Over 50.5",
+          "bid": 0.505,
+          "ask": 0.51,
+          "mid": 0.5075000000000001,
+          "bid_sz": 3813
+        },
+        "under": {
+          "name": "Under 50.5",
+          "bid": 0.49,
+          "ask": 0.495,
+          "mid": 0.4925,
+          "bid_sz": 35024
+        },
+        "http": 200,
+        "fee": {
+          "coefficient": "0.03",
+          "makerCredit": "0.5",
+          "charged": "WHEN_LIVE"
+        }
+      }
+    }
+  ],
+  "injuries_movers": [
+    {
+      "team": "BAL",
+      "team_name": "Baltimore Ravens",
+      "player": "Lamar Jackson",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Jackson was held out of Sunday's 30-23 overtime win over the Falcons due to a left ankle sprain that he sustained during the Ravens' Week 4 win over the Titans. Minter added that he wasn't sure whether Jackson would be cleared to practice W",
+      "date": "2026-10-12T19:13Z"
+    },
+    {
+      "team": "CHI",
+      "team_name": "Chicago Bears",
+      "player": "Caleb Williams",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Prior to Williams being deemed inactive for a third straight game Sunday due to a Grade 2 right hamstring strain, Ian Rapoport of NFL Network reported that the quarterback is \"pushing to play\" next weekend against the Falcons, and the fact ",
+      "date": "2026-10-11T21:05Z"
+    },
+    {
+      "team": "LAR",
+      "team_name": "Los Angeles Rams",
+      "player": "Ty Simpson",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Simpson will continue to operate as the Rams' emergency QB3, which means he cannot play Monday unless both Matthew Stafford and Stetson Bennett leave the game due to injury, illness or ejection.",
+      "date": "2026-10-12T23:00Z"
+    },
+    {
+      "team": "TB",
+      "team_name": "Tampa Bay Buccaneers",
+      "player": "Baker Mayfield",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:43Z"
+    },
+    {
+      "team": "WAS",
+      "team_name": "Washington Commanders",
+      "player": "Marcus Mariota",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:48Z"
+    },
+    {
+      "team": "BUF",
+      "team_name": "Buffalo Bills",
+      "player": "DJ Moore",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "After suffering a shoulder injury in Week 4, Moore wasn't expected to be tending to a long-term issue, and head coach Joe Brady told Katherine Fitzgerald of The Buffalo News on Thursday that the wide receiver was \"going to be able to do eve",
+      "date": "2026-10-12T22:49Z"
+    },
+    {
+      "team": "BUF",
+      "team_name": "Buffalo Bills",
+      "player": "Joshua Palmer",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-12T22:51Z"
+    },
+    {
+      "team": "CHI",
+      "team_name": "Chicago Bears",
+      "player": "Kyle Monangai",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T18:58Z"
+    },
+    {
+      "team": "CLE",
+      "team_name": "Cleveland Browns",
+      "player": "Carsen Ryan",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:03Z"
+    },
+    {
+      "team": "CLE",
+      "team_name": "Cleveland Browns",
+      "player": "Tylan Wallace",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:03Z"
+    },
+    {
+      "team": "IND",
+      "team_name": "Indianapolis Colts",
+      "player": "Ashton Dulin",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:14Z"
+    },
+    {
+      "team": "IND",
+      "team_name": "Indianapolis Colts",
+      "player": "Darius Slayton",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:14Z"
+    },
+    {
+      "team": "LAC",
+      "team_name": "Los Angeles Chargers",
+      "player": "Brenen Thompson",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:18Z"
+    },
+    {
+      "team": "LAC",
+      "team_name": "Los Angeles Chargers",
+      "player": "Quentin Johnston",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:18Z"
+    },
+    {
+      "team": "LAR",
+      "team_name": "Los Angeles Rams",
+      "player": "CJ Daniels",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-12T22:55Z"
+    },
+    {
+      "team": "LAR",
+      "team_name": "Los Angeles Rams",
+      "player": "Max Klare",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-12T22:55Z"
+    },
+    {
+      "team": "LV",
+      "team_name": "Las Vegas Raiders",
+      "player": "Jalen Nailor",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "After sustaining a concussion in the Raiders' Oct. 4 loss to the Chiefs, Nailor wasn't able to practice in any fashion in Week 5 before being ruled out ahead of Sunday's eventual 45-17 loss to the Patriots. Nailor remains in concussion prot",
+      "date": "2026-10-12T20:11Z"
+    },
+    {
+      "team": "NYJ",
+      "team_name": "New York Jets",
+      "player": "Adonai Mitchell",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:32Z"
+    },
+    {
+      "team": "NYJ",
+      "team_name": "New York Jets",
+      "player": "Breece Hall",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:32Z"
+    },
+    {
+      "team": "PHI",
+      "team_name": "Philadelphia Eagles",
+      "player": "DeVonta Smith",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Smith has missed the Eagles' last two games due to a hamstring injury, and the Eagles also were without Saquon Barkley (hamstring) for their 19-17 Week 5 loss to the Jaguars in London. Smith has been limited to side work over the last coupl",
+      "date": "2026-10-12T19:59Z"
+    },
+    {
+      "team": "PHI",
+      "team_name": "Philadelphia Eagles",
+      "player": "Hollywood Brown",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:35Z"
+    },
+    {
+      "team": "PHI",
+      "team_name": "Philadelphia Eagles",
+      "player": "Saquon Barkley",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Barkley was sidelined for Sunday's 19-17 loss to the Jaguars in London due to a right hamstring injury that he sustained during the Eagles' Week 4 loss to the Rams. Wednesday will be the first Eagles practice of Week 6 prep, and even a limi",
+      "date": "2026-10-12T19:54Z"
+    },
+    {
+      "team": "PIT",
+      "team_name": "Pittsburgh Steelers",
+      "player": "Ben Skowronek",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Skowronek was diagnosed with a leg injury during the Steelers' 34-22 win over the Colts, which he picked up after a punt return in the first half. He was unable to return to the contest, and his calf issue will cost him at least one game, w",
+      "date": "2026-10-12T22:08Z"
+    },
+    {
+      "team": "PIT",
+      "team_name": "Pittsburgh Steelers",
+      "player": "Rico Dowdle",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Though he managed three limited practices in Week 5, Dowdle ultimately missed a third straight game in Sunday's eventual 34-22 win over the Colts. The Steelers seem optimistic that Dowdle will upgrade to full practice participation at some ",
+      "date": "2026-10-12T20:07Z"
+    },
+    {
+      "team": "PIT",
+      "team_name": "Pittsburgh Steelers",
+      "player": "Roman Wilson",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Jeremy Fowler of ESPN.com reported earlier Monday that Wilson is expected to miss at least a couple of weeks due to a finger injury that he sustained during the Steelers' 34-22 win over the Colts on Sunday, so the third-year receiver's abse",
+      "date": "2026-10-12T19:17Z"
+    },
+    {
+      "team": "SEA",
+      "team_name": "Seattle Seahawks",
+      "player": "Zach Charbonnet",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Charbonnet, who has been on the reserve/PUP list all season while recovering from the torn ACL he sustained last January, is entering his second week of practicing after Seattle opened his 21-day evaluation window Thursday. Considering that",
+      "date": "2026-10-12T20:40Z"
+    },
+    {
+      "team": "SF",
+      "team_name": "San Francisco 49ers",
+      "player": "Deebo Samuel Sr.",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Samuel underwent an MRI on his hamstring following Sunday's game, and the results showed an injury significant enough for the veteran wide receiver to miss multiple weeks. Given the timeline laid out by Shanahan, Samuel looks set to sit out",
+      "date": "2026-10-12T19:45Z"
+    },
+    {
+      "team": "TEN",
+      "team_name": "Tennessee Titans",
+      "player": "David Martin-Robinson",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:45Z"
+    },
+    {
+      "team": "WAS",
+      "team_name": "Washington Commanders",
+      "player": "Stefon Diggs",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:48Z"
+    },
+    {
+      "team": "ARI",
+      "team_name": "Arizona Cardinals",
+      "player": "Andrew Wingard",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T18:55Z"
+    },
+    {
+      "team": "ATL",
+      "team_name": "Atlanta Falcons",
+      "player": "Za'Darius Smith",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T18:56Z"
+    },
+    {
+      "team": "BAL",
+      "team_name": "Baltimore Ravens",
+      "player": "Andrew Vorhees",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "Vorhees will be unavailable for Week 5 after suffering a foot injury in Week 4 against Tennessee. John Simpson and Olaivavega Ioane likely will to operate as the team's starting offensive guards versus the Falcons.",
+      "date": "2026-10-11T23:18Z"
+    },
+    {
+      "team": "BAL",
+      "team_name": "Baltimore Ravens",
+      "player": "Cam Jurgens",
+      "pos": "C",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Ravens will have a better sense of Jurgens' status for this Sunday's road game against the Browns during or shortly after Wednesday's practice. He was acquired by Baltmore from Philadelphia on Oct. 7 and is expected to serve as the Rave",
+      "date": "2026-10-12T23:49Z"
+    },
+    {
+      "team": "BAL",
+      "team_name": "Baltimore Ravens",
+      "player": "Trey Hendrickson",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T18:57Z"
+    },
+    {
+      "team": "BUF",
+      "team_name": "Buffalo Bills",
+      "player": "Ar'maj Reed-Adams",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-12T22:51Z"
+    },
+    {
+      "team": "BUF",
+      "team_name": "Buffalo Bills",
+      "player": "Dee Alford",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Alford drew the questionable tag for Monday night's game after logging a limited practice Saturday, but he'll end up missing his first game of the season due to an ankle injury that he sustained against the Patriots in Week 4. Damar Hamlin ",
+      "date": "2026-10-12T22:55Z"
+    },
+    {
+      "team": "BUF",
+      "team_name": "Buffalo Bills",
+      "player": "Ed Oliver",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-12T22:51Z"
+    },
+    {
+      "team": "BUF",
+      "team_name": "Buffalo Bills",
+      "player": "Jude Bowry",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-12T22:51Z"
+    },
+    {
+      "team": "BUF",
+      "team_name": "Buffalo Bills",
+      "player": "Landon Jackson",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Jackson was initially listed as questionable due to a knee injury, which is severe enough for the second-year pro to miss his first game of the regular season. Greg Gaines and DeWayne Carter are in line for more rotational reps on the Bills",
+      "date": "2026-10-12T22:56Z"
+    },
+    {
+      "team": "CAR",
+      "team_name": "Carolina Panthers",
+      "player": "Ikem Ekwonu",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Ekwonu was placed on the Panthers' reserve/PUP list prior to the start of the regular season, as he was still recovering from the ruptured patellar tendon he suffered during the Panthers' wild-card loss against the Rams last postseason, and",
+      "date": "2026-10-06T01:04Z"
+    },
+    {
+      "team": "CAR",
+      "team_name": "Carolina Panthers",
+      "player": "Taylor Moton",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Moton opened the season on the reserve/non-football illness list due to blood clots in his lung, which he was diagnosed with prior to the start of training camp in late July. Once he's officially designated for return, Moton will have 21 da",
+      "date": "2026-10-12T18:43Z"
+    },
+    {
+      "team": "CAR",
+      "team_name": "Carolina Panthers",
+      "player": "Tershawn Wharton",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Wharton opened the season on the Panthers' reserve/PUP list while recovering from neck surgery, which he underwent in mid-May. He's progressed enough in his recovery to return to practice, though Wharton would likely need to log multiple fu",
+      "date": "2026-10-12T18:21Z"
+    },
+    {
+      "team": "CHI",
+      "team_name": "Chicago Bears",
+      "player": "Keyshaun Elliott",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T18:58Z"
+    },
+    {
+      "team": "CHI",
+      "team_name": "Chicago Bears",
+      "player": "Kyler Gordon",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Gordon strung together three consecutive full practices during Week 5 prep and drew the questionable tag for Sunday's NFC North tilt. However, the fifth-year pro is not quite ready to be activated from the reserve/PUP list, so his next chan",
+      "date": "2026-10-10T19:40Z"
+    },
+    {
+      "team": "CHI",
+      "team_name": "Chicago Bears",
+      "player": "Shemar Turner",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Turner ended Week 5 prep with back-to-back full practices, but the second-year defensive tackle is not quite ready to make his 2026 regular-season debut. He's in the final stages of his recovery from a torn ACL that he sustained in October ",
+      "date": "2026-10-10T19:58Z"
+    },
+    {
+      "team": "CLE",
+      "team_name": "Cleveland Browns",
+      "player": "Mason Graham",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:03Z"
+    },
+    {
+      "team": "CLE",
+      "team_name": "Cleveland Browns",
+      "player": "Mike Hall Jr.",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:03Z"
+    },
+    {
+      "team": "CLE",
+      "team_name": "Cleveland Browns",
+      "player": "Teven Jenkins",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:03Z"
+    },
+    {
+      "team": "DAL",
+      "team_name": "Dallas Cowboys",
+      "player": "Cobie Durant",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:04Z"
+    },
+    {
+      "team": "DAL",
+      "team_name": "Dallas Cowboys",
+      "player": "DeMarvion Overshown",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:04Z"
+    },
+    {
+      "team": "DAL",
+      "team_name": "Dallas Cowboys",
+      "player": "Drew Shelton",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:04Z"
+    },
+    {
+      "team": "DAL",
+      "team_name": "Dallas Cowboys",
+      "player": "Joey Porter Jr.",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:04Z"
+    },
+    {
+      "team": "DEN",
+      "team_name": "Denver Broncos",
+      "player": "Pat Surtain II",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:05Z"
+    },
+    {
+      "team": "DEN",
+      "team_name": "Denver Broncos",
+      "player": "Riley Moss",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Moss was unavailable for Sunday's 23-17 win over the Chargers as a result of an injury to his ribs that he suffered in Week 4. The cornerback was unable to practice at all last week, so Monday's estimated participation is a step in the righ",
+      "date": "2026-10-12T23:26Z"
+    },
+    {
+      "team": "GB",
+      "team_name": "Green Bay Packers",
+      "player": "Aaron Banks",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:12Z"
+    },
+    {
+      "team": "GB",
+      "team_name": "Green Bay Packers",
+      "player": "Anthony Campbell",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:12Z"
+    },
+    {
+      "team": "GB",
+      "team_name": "Green Bay Packers",
+      "player": "Jacob Monk",
+      "pos": "C",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:12Z"
+    },
+    {
+      "team": "GB",
+      "team_name": "Green Bay Packers",
+      "player": "Javon Hargrave",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "It's another brutal blow to the Packers defense, which lost linebacker Edgerrin Cooper to the same injury in Week 4 against the Buccaneers. The next step for Hargrave is season-ending surgery, and the recovery timeline could keep the vetera",
+      "date": "2026-10-12T16:27Z"
+    },
+    {
+      "team": "GB",
+      "team_name": "Green Bay Packers",
+      "player": "Micah Parsons",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Parsons had previously noted in the early stages of training camp that the Week 6 matchup with his former team was a realistic target for his season debut. The 27-year-old ultimately won't be ready to play against Dallas, and while the Pack",
+      "date": "2026-10-12T17:41Z"
+    },
+    {
+      "team": "IND",
+      "team_name": "Indianapolis Colts",
+      "player": "Jaylon Carlies",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:14Z"
+    },
+    {
+      "team": "JAX",
+      "team_name": "Jacksonville Jaguars",
+      "player": "Anton Harrison",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-13T14:11Z"
+    },
+    {
+      "team": "JAX",
+      "team_name": "Jacksonville Jaguars",
+      "player": "Eric Murray",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:15Z"
+    },
+    {
+      "team": "LAC",
+      "team_name": "Los Angeles Chargers",
+      "player": "Derwin James Jr.",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:18Z"
+    },
+    {
+      "team": "LAC",
+      "team_name": "Los Angeles Chargers",
+      "player": "Donte Jackson",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:18Z"
+    },
+    {
+      "team": "LAC",
+      "team_name": "Los Angeles Chargers",
+      "player": "Joe Alt",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:18Z"
+    },
+    {
+      "team": "LAC",
+      "team_name": "Los Angeles Chargers",
+      "player": "Kayode Awosika",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:18Z"
+    },
+    {
+      "team": "LAC",
+      "team_name": "Los Angeles Chargers",
+      "player": "Rodney Shelley",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Shelley has been dealing with the hamstring injury for at least a few weeks. After suiting up in the Chargers' first four games of the 2026 campaign, he will finally sit out in Week 5 against Denver.",
+      "date": "2026-10-11T19:32Z"
+    },
+    {
+      "team": "LAR",
+      "team_name": "Los Angeles Rams",
+      "player": "Bill Murray",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-12T22:55Z"
+    },
+    {
+      "team": "LAR",
+      "team_name": "Los Angeles Rams",
+      "player": "Larrell Murchison",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-12T22:55Z"
+    },
+    {
+      "team": "LV",
+      "team_name": "Las Vegas Raiders",
+      "player": "Trey Zuhn III",
+      "pos": "C",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:16Z"
+    },
+    {
+      "team": "NE",
+      "team_name": "New England Patriots",
+      "player": "Carlton Davis III",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:27Z"
+    },
+    {
+      "team": "NE",
+      "team_name": "New England Patriots",
+      "player": "Channing Canada",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:27Z"
+    },
+    {
+      "team": "NE",
+      "team_name": "New England Patriots",
+      "player": "Christian Gonzalez",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:27Z"
+    },
+    {
+      "team": "NE",
+      "team_name": "New England Patriots",
+      "player": "Karon Prunty",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:27Z"
+    },
+    {
+      "team": "NO",
+      "team_name": "New Orleans Saints",
+      "player": "Anfernee Jennings",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:29Z"
+    },
+    {
+      "team": "NO",
+      "team_name": "New Orleans Saints",
+      "player": "Jeremiah Wright",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:29Z"
+    },
+    {
+      "team": "NO",
+      "team_name": "New Orleans Saints",
+      "player": "Kaden Elliss",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:29Z"
+    },
+    {
+      "team": "NO",
+      "team_name": "New Orleans Saints",
+      "player": "Nathan Shepherd",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:29Z"
+    },
+    {
+      "team": "NO",
+      "team_name": "New Orleans Saints",
+      "player": "Vernon Broughton",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:29Z"
+    },
+    {
+      "team": "NYG",
+      "team_name": "New York Giants",
+      "player": "Jason Pinnock",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-12T19:30Z"
+    }
+  ],
+  "x_news": [
+    {
+      "src": "Schefter",
+      "ts_pt": "2026-10-13 7:16am PT",
+      "text": "NE RB TreVeyon Henderson high ankle sprain, multi-week, no surgery expected."
+    },
+    {
+      "src": "Schefter",
+      "ts_pt": "2026-10-12 12:13pm PT",
+      "text": "ATL QB Michael Penix rib injury not considered serious; might return Week 6 vs CHI pending practice."
+    },
+    {
+      "src": "Schefter",
+      "ts_pt": "2026-10-12 12:26pm PT",
+      "text": "SF WR Deebo Samuel hamstring \u2014 miss at least a couple weeks; Pearsall season (PCL); other WRs long-term."
+    },
+    {
+      "src": "Schefter",
+      "ts_pt": "2026-10-12 11:02am PT",
+      "text": "SF LB Dre Greenlaw suspended 1 game (headbutt) \u2014 out MNF vs WAS (appealing per Rapoport)."
+    },
+    {
+      "src": "Schefter",
+      "ts_pt": "2026-10-12 10:30am PT",
+      "text": "GB not anticipating Micah Parsons return to practice this week vs DAL; knee timeline uncertain."
+    },
+    {
+      "src": "Schefter",
+      "ts_pt": "2026-10-12 9:28am PT",
+      "text": "HOU RB David Montgomery groin week-to-week (DeMeco Ryans)."
+    },
+    {
+      "src": "Rapoport",
+      "ts_pt": "2026-10-13 4:01am PT",
+      "text": "JAX LT Anton Harrison expected arthroscopic knee surgery post-London; weeks OR months depending on findings."
+    },
+    {
+      "src": "Rapoport",
+      "ts_pt": "2026-10-12 11:05am PT",
+      "text": "MHJ trade pending physical: HOU gets Marvin Harrison Jr + 2027 6th; ARI gets 2027 2nd + 7th."
+    },
+    {
+      "src": "Rapoport",
+      "ts_pt": "2026-10-12 11:23am PT",
+      "text": "CLE LB Carson Schwesinger Grade 1 ankle; Judkins day-to-day \u2014 both have chance Week 6."
+    },
+    {
+      "src": "Yahoo/CBS injury roundup",
+      "ts_pt": "2026-10-12",
+      "text": "Baker Mayfield (TB, thumb) OUT Week 6; Lamar Jackson (BAL, ankle) Questionable; Caleb Williams (CHI, hamstring) Questionable / Rapoport: could return; Marcus Mariota (JAX, knee/MCL) Doubtful per earlier reports \u2014 verify practice."
+    }
+  ],
+  "missing": [],
+  "orders_placed": false
+}
